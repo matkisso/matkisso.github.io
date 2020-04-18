@@ -1,0 +1,190 @@
+<!--
+@Author: Mark Atkisson <mark>
+@Date:   05-25-2019, 22:35:39
+@Email:  matkisso@ucsd.edu
+@Filename: hubert.html
+@Last modified by:   mark
+@Last modified time: 05-25-2019, 22:43:06
+-->
+
+<!DOCTYPE html>
+
+<head>
+
+    <!-- Top header -->
+    <link rel="stylesheet" type="text/css" href="theme.css">
+    <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Letter_h.svg/1200px-Letter_h.svg.png">
+    <div class="header">
+        <h1>mark atkisson</h1>
+        <!--
+        <p id="randommessage"></p>
+
+        <button class="mark" onclick="generateMessage()"></button>
+        -->
+
+        <!--
+        <div class="link" style="text-align:center">
+            <p></p>
+            <a href="http://www.cookie.com">Goes well with milk</a>
+        </div>
+        -->
+
+    </div>
+
+    <!--
+    <script type="text/javascript">
+        function generateMessage() {
+            var num = Math.floor(Math.random() * 6) + 1
+
+            if (num == 1) {
+                document.getElementById("randommessage").innerHTML = "He likes eggs!"
+            }
+            if (num == 2) {
+                document.getElementById("randommessage").innerHTML = "He plays with fire!"
+            }
+            if (num == 3) {
+                document.getElementById("randommessage").innerHTML = "He drinks milk!"
+            }
+            if (num == 4) {
+                document.getElementById("randommessage").innerHTML = "He has connections with the mafia!"
+            }
+            if (num == 5) {
+                document.getElementById("randommessage").innerHTML = "He likes the color brown!"
+            }
+            if (num == 6) {
+                document.getElementById("randommessage").innerHTML = "He shops at WinCo!"
+            }
+        }
+    </script>
+    -->
+
+<body>
+    <script type="text/javascript">
+        function openElement(evt, name) {
+            // Declare all variables
+            var i, tabcontent, tablinks;
+
+            // Get all elements with class="tabcontent" and hide them
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            // Get all elements with class="tablinks" and remove the class "active"
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            // Show the current tab, and add an "active" class to the button that opened the tab
+            document.getElementById(name).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+
+    <!-- Tab links -->
+    <div id="mark" class="tab">
+      <div class="tableft">
+        <button class="tablinks active" onclick="openElement(event, 'Home')">home</button>
+        <!--<button class="tablinks" onclick="openElement(event, 'Projects')">Projects</button>-->
+        <button class="tablinks" onclick="openElement(event, 'Archive')">archive</button>
+      </div>
+      <div class="tabright">
+        <button class="tablinks" onclick="openElement(event, 'About')">about</button>
+        <button class="tablinks" onclick="openElement(event, 'Contact')">contact</button>
+      </div>
+    </div>
+
+    <div id="Home" class="tabcontent" style ="display:block">
+      <h1>Welcome!</h1>
+    </div>
+
+    <!-- Tab content -->
+    <div id="About" class="tabcontent">
+        <!--<img src="https://lh3.googleusercontent.com/n3HoTLSfwyIDKjaHj6ZnON-LCNyJM0KhjtU6enTuiD2h2czKgurApaZGJDCRqAa6rLqXj-5dnHLLsWD-nUIvKpf7W0GoUVCA_ygs2nv5ZmrrsAk28VYT5LPgInthj5TwoQZM0Ill79uysfXJuoTDUXjCaWuvVsslD90nFIErKwXko2HaXeyiLNBZ9e3cubf63jgwZHkJpaix-CPqul11vmNnLH-dXg95RYNA00kXKX45jheMHQLyqyAUcoM6vKgAF5K3Ri1yicIkQrHfJsX4-RybhVjqiAsA6-s7zdxlJvB0q6E-gUdPkYH9_F3KKqZB3TMmWOtJ0yoV9kp3l2kpTUQB6ZIxZgsBoZMG5r7J2AJ5bENSJWImPdNzvRYoisBfkJfzxmYw250DHCe8Zq0zcbgVGpVvgdTeNf7a6NXhFIsX3VUSLJjNdPO77uBpkjfY7nnqTkuTflYb_R4tNqmsofPJIyMixKv3SUMZvX1I_4EqLircLzpKVHdRgtUEcC-NSUdoG4bHFHUkA8EjEjn3WPJWk9y_fOM8QCPB7loLFM-ikJryXnvxVV7hF3Dh1gz2h__-Q3WeBykloiC8MukHbLvSIiBfaPDRipY8ddsSYkHR60PqRhABEN3wQ9WIcw1npqMC_vFAmush3z6YffUoBkxO-FYF15nq=w1000-h1500-no"
+            alt="" align=right>-->
+        <h2>About Mark:</h2>
+
+        <!-- Add image here
+        <img src=""</img>
+        -->
+
+        <p>Hello!</p>
+
+        <p>Mark is an undergraduate student at the University of California, San Diego (UCSD) pursuing a B.S. in computer science and a minor in business, likely graduating in June 2021.</p>
+
+        <p>His interests include user interface design, cybersecurity, and computer simulation. He is a proponent of free and open-source software and privacy of information. </p>
+
+        <p>His strong background in business administration has given him the opportunity to manage several large teams in the past – most notably in a software engineering class. One day, he hopes to use what he has learned to start up his own company that would help him to change society for the better.</p>
+
+        <p>When he's not busy with school work, he enjoys swimming, cycling, surfing, listening to music, drawing, building with LEGO, watching videos on YouTube, playing with his cat, and talking about himself in the third person.</p>
+
+        <!--<h3>Fun Facts</h3>
+        <div class="aboutmark">
+            <ul id="aboutmark">
+                <li>He plays with fire.</li>
+                <li>His favorite store is WinCo</li>
+                <li>He likes cheescake</li>
+                <li>His favorite game is Minecraft</li>
+                <li>He is the mother of a corgi</li>
+                <li>His favorite color is brown</li>
+                <li>He likes milk</li>
+                <li>He has a Swedish dog named Göteborg</li>
+                <li>He stole your broccoli before you even bought it</li>
+                <li>He likes tomatoes</li>
+                <li>He has a range of dairy products under the Hubert Phil Dairy Farms brand</li>
+                <li>He is a basking shark afficionado</li>
+                <li>He is a technology genius</li>
+                <li>He is Conair Mosely's #1 fan</li>
+                <li>He is cuool</li>
+                <li>He is an aspiring Seaborgium chemist</li>
+                <li>He is a fan of Pickle Rick</li>
+                <li>He is a disease carrier pigeon</li>
+                <li>Thank God trying to pass the econ</li>
+                <li>He is an aquatic cockroach</li>
+                <li>He is a lawyer, doctor, and professor</li>
+                <li>He is a rap god and releases music under the pseudonym "Young Lollipop"</li>
+                <li>He is a pro cleaning man</li>
+                <li>He hosts a TV program called "Problem Solving With Hubert"</li>
+                <li>He invented soundless maracas</li>
+                <li>His bedroom is Fairwinds</li>
+                <li>He founded a radio station, Kmark 98.1. It plays smooth jazz</li>
+                <li>He is a celebrity chef</li>
+                <li>He is the next Pablo Picasso</li>
+                <li>He fervently supports the GUCCI F1 Team</li>
+                <li>He takes two hour naps from 1:00 to 4:00 pm</li>
+                <li>He wrote a book called "Life Hacks with Hubert"</li>
+                <li>He is a goat lord</li>
+                <li>He has the unique ability to talk to animals</li>
+            </ul>
+        </div>-->
+    </div>
+
+    <div id="Projects" class="tabcontent">
+        <h3>Here is a list of my current projects:</h3>
+        <div class="projects">
+            <ul id="aboutmark">
+            </ul>
+        </div>
+    </div>
+
+    <div id="Archive" class="tabcontent">
+        <h3>Here is a list of my former projects:</h3>
+        <div class="archive">
+            <ul id="aboutmark">
+            </ul>
+        </div>
+    </div>
+
+    <div id="Contact" class="tabcontent">
+        <h2>Send me an email!</h2>
+        <p>matkisso (at) ucsd (dot) edu</p>
+    </div>
+
+    <p></p>
+</body>
+
+<div class="footer">
+    ©1999–2020 Mark Atkisson. All rights reserved. Objects in mirror are closer than they appear.
+</div>
+</head>
