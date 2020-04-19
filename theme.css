@@ -2,7 +2,7 @@
 * @Author: mark
 * @Date:   2020-04-17T23:43:18-07:00
  * @Last modified by:   mark
- * @Last modified time: 2020-04-18T22:00:56-07:00
+ * @Last modified time: 2020-04-18T23:17:27-07:00
 * @Description: Theme version 2
 */
 
@@ -18,16 +18,16 @@
 
 #footer {
     position: absolute;
-    bottom: 0;
+    bottom: 10px;
     width: 100%;
     text-align: center;
-    height: 1rem;            /* Footer height */
+    height: 1.5rem;            /* Footer height */
     font-family: Helvetica Neue;
     font-size: 12px;
     background-color: white;
 }
 
-/* Add a black background color to the top navigation */
+/* Add a light grey background color to the top navigation */
 .topnav {
     background-color: #f1f1f1;
     overflow: hidden;
@@ -46,12 +46,12 @@
 }
 
 #navbar #logo {
-    font-size: 44px;
+    font-size: 48px;
     font-weight: bold;
     padding-top: 0px;
 }
 
-#navbar #contact {
+.navbar-right #contact {
     background-color: cornflowerblue;
     color: white;
 }
