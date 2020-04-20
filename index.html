@@ -7,32 +7,33 @@
 -->
 
 <!DOCTYPE html>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="theme.css"/>
     <!--<link rel="shortcut icon" href="">-->
 </head>
-
-<body>
-    <div id="page-container">
+<header id="header">
+    <nav>
+        <div class="topnav" id="navbar">
+            <a href="https://matkisso.github.io" class="active" id="logo">Mark Atkisson</a>
+            <div class="navbar-right">
+                <a id="contact">contact</a>
+                <a>about</a>
+                <a href="https://matkisso.github.io">home</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="openMenu()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </nav>
+</header>
+<body class="header">
+    <div id="page-container" class="content">
         <div id="content-wrap">
             <!-- all other page content-->
             <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-            <div class="topnav" id="navbar">
-                <a href="https://matkisso.github.io" class="active" id="logo">Mark Atkisson</a>
-                <div class="navbar-right">
-                    <a id="contact">contact</a>
-                    <a>changelog</a>
-                    <a>about</a>
-                    <a href="https://matkisso.github.io">home</a>
-                </div>
-                <a href="javascript:void(0);" class="icon" onclick="openMenu()">
-                    <i class="fa fa-bars"></i>
-                </a>
-            </div>
 
             <script type="text/javascript">
                 /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
@@ -40,13 +41,15 @@
                     var x = document.getElementById("navbar");
                     if (x.className === "topnav") {
                         x.className += " responsive";
+                        document.getElementById("page-container").style.top = "100px";
                     } else {
                         x.className = "topnav";
+                        document.getElementById("page-container").style.top = "0px";
                     }
                 }
             </script>
 
-            <div style="margin-top:0px;padding:15px 15px;font-family:Helvetica">
+            <div id="text">
                 <h1>Welcome to my little slice of the Internet!</h1>
 
                 <br>
@@ -57,25 +60,35 @@
 
                 <br>
                 <div style="font-family: Monaco">
-                    <p><b>About this site:</b><br>Last updated: 19 April 2020 @ 20:36<br>Version: 0.03.04a</p>
+                    <p><b>About this site:</b><br>Last updated: 20 April 2020 @ 01:04<br>Version: 0.10a</p>
                 </div>
 
                 <br>
                 <h4>Changelog:</h4>
                 <p>
-                    0.03.04a: Released 19 April 2020 <ul>
+                    <b>0.10a:</b> Released 20 April 2020
+                        <p>Major release!</p>
+                    <ul>
+                        <li>Revised header design.</li>
+                        <li>Changed color of contact button.</li>
+                        <li>Contact button now changes color when hovering over it.</li>
+                        <li>Removed changelog tab due to problems on mobile.</li>
+                        <li>Version numbers in changelog are now boldened.</li>
+                        <li>Header now sticks to the top of the page when scrolling.</li>
+                    </ul>
+                    <b>0.03.04a:</b> Released 19 April 2020 <ul>
                         <li>Changed version numbering system.</li>
                         <li>Re-formatted text.</li>
                     </ul>
-                    0.03.03a: Released 19 April 2020 <ul>
+                    <b>0.03.03a:</b> Released 19 April 2020 <ul>
                         <li>Made title smaller.</li>
                         <li>Fixed menu bar on iPhones</li>
                     </ul>
-                    0.03.02a: Released 19 April 2020 <ul>
+                    <b>0.03.02a:</b> Released 19 April 2020 <ul>
                         <li>Changed early development warning message.</li>
                         <li>Removed Easter eggs.</li>
                     </ul>
-                    0.03a: Released 18 April 2020 <ul>
+                    <b>0.03a:</b> Released 18 April 2020 <ul>
                         <li>Fixed welcome message bug</li>
                         <li>Fixed error in theming</li>
                         <li>Fixed website automatically scrolling down when clicking on links</li>
@@ -88,15 +101,56 @@
                         <li>Changed size of site title</li>
                     </ul>
                     <br>
-                    0.02a: Released 18 April 2020<ul>
+                    <b>0.02a:</b> Released 18 April 2020<ul>
                         <li>Completely re-built design from ground up!</li>
                     </ul>
                     <br>
-                    0.01a: Released 17 April 2020<ul>
+                    <b>0.01a:</b> Released 17 April 2020<ul>
                         <li>First release.</li>
                     </ul>
                 </p>
             </div>
+
+            <script type="text/javascript">
+                // When the user scrolls the page, execute myFunction
+                window.onscroll = function() {stickNavbar()};
+
+                // Get the navbar
+                var navbar = document.getElementById("navbar");
+
+                // Get the offset position of the navbar
+                var sticky = navbar.offsetTop;
+
+                // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+                function stickNavbar() {
+                    if (window.pageYOffset >= sticky) {
+                        navbar.classList.add("sticky")
+                    } else {
+                        navbar.classList.remove("sticky");
+                    }
+                }
+            </script>
+
+            <script type="text/javascript">
+                // When the user scrolls the page, execute myFunction
+                window.onscroll = function() {stickHeader()};
+
+                // Get the navbar
+                var navbar = document.getElementById("header");
+
+                // Get the offset position of the navbar
+                var sticky = navbar.offsetTop;
+
+                // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+                function stickHeader() {
+                    if (window.pageYOffset >= sticky) {
+                        navbar.classList.add("sticky")
+                    } else {
+                        navbar.classList.remove("sticky");
+                    }
+                }
+            </script>
+
         </div>
         <footer id="footer">Made with ❤️ by <b>Mark Atkisson</b> © 2020 All rights reserved.</footer>
     </div>
