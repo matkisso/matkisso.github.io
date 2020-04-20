@@ -2,7 +2,7 @@
 * @Author: mark
 * @Date:   2020-04-17T23:43:18-07:00
  * @Last modified by:   mark
- * @Last modified time: 2020-04-19T20:33:54-07:00
+ * @Last modified time: 2020-04-19T20:38:42-07:00
 * @Description: Theme version 2
 */
 
@@ -46,7 +46,7 @@
 }
 
 #navbar #logo {
-    font-size: 42px;
+    font-size: 40px;
     font-weight: bold;
     padding-top: 0px;
 }
