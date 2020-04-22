@@ -39,7 +39,7 @@
                 /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
                 function openMenu() {
                     var x = document.getElementById("navbar");
-                    if (x.className === "topnav" || /Android|webOS|iPhone|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+                    if (x.className == "topnav") {
                         x.className += " responsive";
                         document.getElementById("page-container").style.top = "120px";
                     } else {
@@ -51,6 +51,9 @@
 
             <div id="text">
                 <h1>Welcome to my little slice of the Internet!</h1>
+
+                <br>
+                <p>Testing in progress, please wait...</p>
 
                 <br>
                 <p><b>Important Note:</b> This site is in early development. This means that some features are not yet working, and other features might not be fully functional yet.</p>
