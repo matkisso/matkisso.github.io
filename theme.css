@@ -2,7 +2,7 @@
 * @Author: mark
 * @Date:   2020-04-17T23:43:18-07:00
  * @Last modified by:   mark
- * @Last modified time: 2020-04-22T00:08:59-07:00
+ * @Last modified time: 2020-04-22T19:20:53-07:00
 * @Description: Theme version 2
 */
 
@@ -54,7 +54,7 @@ header {
 }
 
 #navbar #logo {
-    font-size: 40px;
+    font-size: 42px;
     font-weight: bold;
     padding-top: 2px;
     padding-left: 16px;
@@ -115,6 +115,8 @@ header {
         float: right;
         display: block;
         padding: 12px;
+        position: absolute;
+        right: 0.5rem;
     }
 
     .navbar-right {
@@ -129,7 +131,7 @@ header {
     }
     .topnav.responsive a.icon {
         position: absolute;
-        right: 0;
+        right: 0.5rem;
         top: 0.75rem;
     }
     .topnav.responsive a {
