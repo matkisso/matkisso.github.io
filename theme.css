@@ -2,7 +2,7 @@
 * @Author: mark
 * @Date:   2020-04-17T23:43:18-07:00
  * @Last modified by:   mark
- * @Last modified time: 2020-04-22T19:55:03-07:00
+ * @Last modified time: 2020-04-24T21:52:44-07:00
 * @Description: Theme version 2
 */
 
@@ -116,7 +116,7 @@ header {
         display: block;
         padding: 12px;
         position: absolute;
-        right: 0.5rem;
+        right: 1rem;
         top: 0.75rem;
     }
 
@@ -132,7 +132,7 @@ header {
     }
     .topnav.responsive a.icon {
         position: absolute;
-        right: 0.5rem;
+        right: 1rem;
         top: 0.75rem;
     }
     .topnav.responsive a {
