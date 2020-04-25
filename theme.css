@@ -2,7 +2,7 @@
 * @Author: mark
 * @Date:   2020-04-17T23:43:18-07:00
  * @Last modified by:   mark
- * @Last modified time: 2020-04-24T23:54:52-07:00
+ * @Last modified time: 2020-04-25T00:38:41-07:00
 * @Description: Theme version 2
 */
 
@@ -74,7 +74,7 @@ header {
 }
 
 #navbar-mobile #contact {
-    background-color: #f1f1f1;
+    background-color: #cfd8dc;
     color: black;
 }
 
