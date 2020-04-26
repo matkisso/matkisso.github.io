@@ -2,7 +2,7 @@
 * @Author: mark
 * @Date:   2020-04-17T23:43:18-07:00
  * @Last modified by:   mark
- * @Last modified time: 2020-04-25T20:37:35-07:00
+ * @Last modified time: 2020-04-25T20:59:42-07:00
 * @Description: Theme version 2
 */
 
@@ -132,7 +132,7 @@ header {
 }
 
 /* When the screen is less than 600 pixels wide, hide all links. Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
     .topnav a:not(:first-child) {display: none;}
     .navbar-right a:first-child {display: none;}
     .topnav a.icon {
@@ -167,7 +167,7 @@ header {
 }
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
     .topnav.responsive {
         position: relative;
     }
@@ -184,7 +184,7 @@ header {
 }
 
 /* Show desktop navbar and hide mobile navbar on screens more than 601px */
-@media screen and (min-width: 701px) {
+@media screen and (min-width: 601px) {
     .mobile {
         display: none;
     }
