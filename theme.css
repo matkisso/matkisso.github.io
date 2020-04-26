@@ -2,7 +2,7 @@
 * @Author: mark
 * @Date:   2020-04-17T23:43:18-07:00
  * @Last modified by:   mark
- * @Last modified time: 2020-04-25T01:09:15-07:00
+ * @Last modified time: 2020-04-25T20:37:35-07:00
 * @Description: Theme version 2
 */
 
@@ -26,7 +26,7 @@
     font-family: Helvetica;
     font-size: 12px;
     width: 100%;
-    background-color: #cfd8dc;
+    background-color: #f1f1f1;
 }
 
 .header {
@@ -132,7 +132,7 @@ header {
 }
 
 /* When the screen is less than 600 pixels wide, hide all links. Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     .topnav a:not(:first-child) {display: none;}
     .navbar-right a:first-child {display: none;}
     .topnav a.icon {
@@ -146,11 +146,6 @@ header {
 
     .navbar-right {
         padding-right: 0px;
-    }
-
-    #video1 {
-        width: auto;
-        height: auto;
     }
 
     /* Show mobile navbar and hide desktop navbar */
@@ -172,7 +167,7 @@ header {
 }
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     .topnav.responsive {
         position: relative;
     }
@@ -189,13 +184,51 @@ header {
 }
 
 /* Show desktop navbar and hide mobile navbar on screens more than 601px */
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 701px) {
     .mobile {
         display: none;
     }
 
     .desktop {
         display: block;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .videos-mobile {
+        width: 800px;
+        height: 450px;
+    }
+}
+@media screen and (max-width: 840px) {
+    .videos-mobile {
+        width: 720px;
+        height: 405px;
+    }
+}
+@media screen and (max-width: 760px) {
+    .videos-mobile {
+        width: 640px;
+        height: 360px;
+    }
+}
+@media screen and (max-width: 700px) {
+    .videos-mobile {
+        width: 560px;
+        height: 315px;
+    }
+}
+@media screen and (max-width: 640px) {
+    .videos-mobile {
+        width: 400px;
+        height: 225px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .videos-mobile {
+        width: auto;
+        height: auto;
     }
 }
 
@@ -220,4 +253,82 @@ header {
 /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
 .sticky + .content {
     padding-top: 80px;
+}
+
+/*.videos {
+    padding-right: 20px;
+}*/
+
+/*#project-videos {
+    padding-right: 16px;
+}*/
+
+.videos-wrapper-desktop {
+    text-align: center;
+}
+
+.videos-desktop {
+    display: inline-block;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.descriptions-wrapper-desktop {
+    text-align: center;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+#project-descriptions {
+    text-align: left;
+    display: inline-block;
+    padding-left: 0px;
+}
+
+.descriptions-desktop {
+    display: inline-grid;
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 800px;
+}
+
+@media screen and (max-width: 1825px) {
+    .videos-desktop {
+        display: none;
+    }
+    .descriptions-desktop {
+        display: none;
+    }
+    .videos-mobile {
+        display: inline-block;
+    }
+}
+
+@media screen and (min-width: 1826px) {
+    .videos-mobile {
+        display: none;
+    }
+    .descriptions-mobile {
+        display: none;
+    }
+    .descriptions-desktop {
+        display: inline-grid;
+    }
+}
+
+.videos-wrapper-mobile {
+    text-align: center;
+}
+
+.descriptions-mobile {
+    text-align: left;
+}
+
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: initial;
 }

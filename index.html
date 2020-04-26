@@ -16,35 +16,36 @@
 </head>
 
 <header id="header">
+    <!-- Desktop navigation bar -->
     <nav class="desktop">
         <div class="topnav" id="navbar">
             <a href="https://matkisso.github.io" id="logo">Mark Atkisson</a>
             <div class="navbar-right">
                 <a href="./contact.html" id="contact">contact</a>
                 <a href="./about.html">about</a>
+                <a href="./changelog.html">changelog</a>
                 <a href="https://matkisso.github.io">home</a>
             </div>
-            <!--<a href="javascript:void(0);" class="icon" onclick="openMenu()">
-            <i class="fa fa-bars"></i>
-        </a>-->
-    </div>
-</nav>
-
-<nav class="mobile">
-    <div class="topnav" id="navbar-mobile">
-        <a href="https://matkisso.github.io" id="logo">Mark Atkisson</a>
-        <div class="navbar-right">
-            <a href="https://matkisso.github.io">home</a>
-            <a href="./about.html">about</a>
-            <a href="./contact.html" id="contact">contact</a>
         </div>
-        <a href="javascript:void(0);" class="icon" onclick="openMenu()">
-            <i class="fa fa-bars"></i>
-        </a>
-    </div>
-</nav>
+    </nav>
 
+    <!-- Mobile navigation bar -->
+    <nav class="mobile">
+        <div class="topnav" id="navbar-mobile">
+            <a href="https://matkisso.github.io" id="logo">Mark Atkisson</a>
+            <div class="navbar-right">
+                <a href="https://matkisso.github.io">home</a>
+                <a href="./changelog.html">changelog</a>
+                <a href="./about.html">about</a>
+                <a href="./contact.html" id="contact">contact</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="openMenu()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </nav>
 </header>
+
 <body class="header">
     <div id="page-container" class="content">
         <div id="content-wrap">
@@ -58,7 +59,7 @@
                     var x = document.getElementById("navbar-mobile");
                     if (x.className == "topnav") {
                         x.className += " responsive";
-                        document.getElementById("page-container").style.top = "120px";
+                        document.getElementById("page-container").style.top = "170px";
                     } else {
                         x.className = "topnav";
                         document.getElementById("page-container").style.top = "0px";
@@ -66,17 +67,97 @@
                 }
             </script>
 
+            <!-- Main site content -->
             <div id="text">
+                <!-- Beta software disclaimer -->
+                <p><b>Note:</b> This site is in beta. It is currently undergoing testing and might not be fully stable. <a href="./bugreport.html">Report a bug</a>.</p>
+                <br>
+
                 <h1>Welcome to my little slice of the Internet!</h1>
+                <br>
 
-                <!--<br>
-                <h2>Ozzy Osbourne – Ordinary Man (feat. Elton John)</h2>
-                <iframe width="560" height="316" src="https://www.youtube.com/embed/dBF78tA443A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="video1"></iframe>
-                <br>-->
+                <p>This site serves as an archive for my current and former projects, as well as things that I'm generally interested in.</p>
+                <br>
 
-                <!--<br>
-                <p><b>Important Note:</b> This site is in early development. This means that some features are not yet working, and other features might not be fully functional yet.</p>-->
+                <h1>Current Projects</h1>
+                <div class="current-projects-wrapper">
+                    <div class="current-projects-info">
+                        <h2>This website</h2>
+                        <h4>April 2020 – present</h4>
+                        <p>I'm currently brushing up on web-development (namely: HTML5, CSS, and some JavaScript) to build the very website you're reading this on!</p>
+                        <p>Picking colors for my UI elements and having content scale properly for mobile devices is also giving me more practice with UI design.</p>
+                        <p>You can learn more by visiting the changelog tab or by clicking <a href="./changelog">here</a>.</p>
+                    </div>
+                </div>
+                <br>
 
+
+                <br>
+                <h1>Former Projects</h1>
+                <br>
+
+                <!-- Different content wrappers for desktop/mobile -->
+                <!-- Video wrapper for desktop -->
+                <div class="videos-wrapper-desktop">
+                    <div id="project-videos">
+                        <iframe width="800" height="450" src="https://www.youtube.com/embed/UIyulYYXwQE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="videos-desktop"></iframe>
+                        <iframe width="800" height="450" src="https://www.youtube.com/embed/Wa8uyr1A5rE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="videos-desktop"></iframe>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <!-- Description wrapper for desktop -->
+                <div class="descriptions-wrapper-desktop">
+                    <div id="project-descriptions">
+                        <div class="descriptions-desktop" id="rainy-city">
+                            <h2>Rainy City</h2>
+                            <h4>February – March 2020</h4>
+                            <p>Rainy City was my group's final project for my computer graphics class. My two teammates and I were given less than three weeks to implement various graphical features and tie it all together with a creative storyline.</p>
+                            <p>We chose to implement a procedurally modeled city, procedurally generated buildings, first-person camera controls, particle effects, a Bézier patch, and collision detection.</p>
+                            <p>Here was our storyline that earned us full points for creativity: Once upon a time, there was a duck, a penguin, and an ostrich. Despite their obvious differences, they were best friends. United by a desire to fly like all the rest of the birds, they banded together and created a hot air balloon. They boarded the hot air balloon and began flying, fulfilling their lifelong dream together. Their first destination was Rainy City, a city perched in the mountains, known for its rainy weather. On the day of their maiden flight upon approach to Rainy City, acid rain caused the hot air balloon to come crashing to the ground, and all three perished. After the tragic incident, the denizens of Rainy City decided to construct a hot air balloon monument to remember them by.</p>
+                            <p>You can read more about our project by visiting our <a href="https://pchang010.github.io/CSE167-Final-PA/">project blog</a>.</p>
+                        </div>
+                        <div class="descriptions-desktop" id="you-see-housing">
+                            <h2>You See Housing</h2>
+                            <h4>March – June 2019</h4>
+                            <p>You See Housing (a play on words for UC Housing) was my group's term project for my software engineering class. My nine teammates and I were given two weeks to think of an idea for an app or website, and eight weeks to implement our idea from scratch.</p>
+                            <p>As Project Manager, I assigned the remaining team members their roles, handled team logistics (such as our twice-a-week code review sessions, team meeting times, and filming days for the final demonstration video), resolved intra-team disputes, gave the software development team deadlines to ensure that we met our target, and created documentation for our app's various features.</p>
+                            <p>Our app curated listing data from multiple sites such as Zillow, apartments.com, and more, and allowed the user to view all of that information in one place.</p>
+                            <p>You can learn more about our app and the team behind it by watching the demo video above.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mobile content wrapper -->
+                <div class="videos-wrapper-mobile">
+                    <div id="project-videos">
+                        <br>
+                        <iframe width="800" height="450" src="https://www.youtube.com/embed/UIyulYYXwQE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="videos-mobile"></iframe>
+                        <br>
+                        <div class="descriptions-mobile">
+                            <h2>Rainy City</h2>
+                            <h4>February – March 2020</h4>
+                            <p>Rainy City was my group's final project for my computer graphics class. My two teammates and I were given less than three weeks to implement various graphical features and tie it all together with a creative storyline.</p>
+                            <p>We chose to implement a procedurally modeled city, procedurally generated buildings, first-person camera controls, particle effects, a Bézier patch, and collision detection.</p>
+                            <p>Here was our storyline that earned us full points for creativity: Once upon a time, there was a duck, a penguin, and an ostrich. Despite their obvious differences, they were best friends. United by a desire to fly like all the rest of the birds, they banded together and created a hot air balloon. They boarded the hot air balloon and began flying, fulfilling their lifelong dream together. Their first destination was Rainy City, a city perched in the mountains, known for its rainy weather. On the day of their maiden flight upon approach to Rainy City, acid rain caused the hot air balloon to come crashing to the ground, and all three perished. After the tragic incident, the denizens of Rainy City decided to construct a hot air balloon monument to remember them by.</p>
+                            <p>You can read more about our project by visiting our <a href="https://pchang010.github.io/CSE167-Final-PA/">project blog</a>.</p>
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+                        <iframe width="800" height="450" src="https://www.youtube.com/embed/Wa8uyr1A5rE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="videos-mobile"></iframe>
+                        <div class="descriptions-mobile">
+                            <h2>You See Housing</h2>
+                            <h4>March – June 2019</h4>
+                            <p>You See Housing (a play on words for UC Housing) was my group's term project for my software engineering class. My nine teammates and I were given two weeks to think of an idea for an app or website, and eight weeks to implement our idea from scratch.</p>
+                            <p>As Project Manager, I assigned the remaining team members their roles, handled team logistics (such as our twice-a-week code review sessions, team meeting times, and filming days for the final demonstration video), resolved intra-team disputes, gave the software development team deadlines to ensure that we met our target, and created documentation for our app's various features.</p>
+                            <p>Our app curated listing data from multiple sites such as Zillow, apartments.com, and more, and allowed the user to view all of that information in one place.</p>
+                            <p>You can learn more about our app and the team behind it by watching the demo video above.</p>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+
+                <br>
                 <br>
                 <h3>More coming soon!</h3>
 

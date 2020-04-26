@@ -16,35 +16,36 @@
 </head>
 
 <header id="header">
+    <!-- Desktop navigation bar -->
     <nav class="desktop">
         <div class="topnav" id="navbar">
-            <a href="https://matkisso.github.io" class="active" id="logo">Mark Atkisson</a>
+            <a href="https://matkisso.github.io" id="logo">Mark Atkisson</a>
             <div class="navbar-right">
                 <a href="./contact.html" id="contact">contact</a>
                 <a href="./about.html">about</a>
+                <a href="./changelog.html">changelog</a>
                 <a href="https://matkisso.github.io">home</a>
             </div>
-            <!--<a href="javascript:void(0);" class="icon" onclick="openMenu()">
-            <i class="fa fa-bars"></i>
-        </a>-->
-    </div>
-</nav>
-
-<nav class="mobile">
-    <div class="topnav" id="navbar-mobile">
-        <a href="https://matkisso.github.io" class="active" id="logo">Mark Atkisson</a>
-        <div class="navbar-right">
-            <a href="https://matkisso.github.io">home</a>
-            <a href="./about.html">about</a>
-            <a href="./contact.html" id="contact">contact</a>
         </div>
-        <a href="javascript:void(0);" class="icon" onclick="openMenu()">
-            <i class="fa fa-bars"></i>
-        </a>
-    </div>
-</nav>
+    </nav>
 
+    <!-- Mobile navigation bar -->
+    <nav class="mobile">
+        <div class="topnav" id="navbar-mobile">
+            <a href="https://matkisso.github.io" id="logo">Mark Atkisson</a>
+            <div class="navbar-right">
+                <a href="https://matkisso.github.io">home</a>
+                <a href="./changelog.html">changelog</a>
+                <a href="./about.html">about</a>
+                <a href="./contact.html" id="contact">contact</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="openMenu()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </nav>
 </header>
+
 <body class="header">
     <div id="page-container" class="content">
         <div id="content-wrap">
@@ -58,7 +59,7 @@
                     var x = document.getElementById("navbar-mobile");
                     if (x.className == "topnav") {
                         x.className += " responsive";
-                        document.getElementById("page-container").style.top = "120px";
+                        document.getElementById("page-container").style.top = "170px";
                     } else {
                         x.className = "topnav";
                         document.getElementById("page-container").style.top = "0px";
@@ -78,83 +79,6 @@
                     <h4>About this site:</h4>
                     <p>Last updated: 24 April 2020 @ 00:23 <br>Version: 1.0b</p>
                 </div>
-
-                <br>
-                <h4>Changelog:</h4>
-                <p>
-                    <b>1.0b</b> Released 24 April 2020 <ul>
-                        <p>Now entering beta!</p>
-                        <li>Increased size of logo on desktop.</li>
-                        <li>Reordered menu elements on mobile.</li>
-                        <li>Changed styling of menu elements on mobile.</li>
-                        <li>About and Contact pages are now functional.</li>
-                        <li>Changed color of footer.</li>
-                        <li>Added drop shadow underneath top navigation bar</li>
-                        <li>Moved "About This Site" information to About page</li>
-                        <li>Moved changelog to About page</li>
-                        <li>Added draft of "About Me"</li>
-                        <li>Added contact information.</li>
-                        <li>Changed color of header.</li>
-                    </ul>
-                    <b>0.10.04a</b> Released 23 April 2020 <ul>
-                        <li>Fixed menu button padding issue.</li>
-                        <li>Changed favicon color to blue.</li>
-                    </ul>
-                    <b>0.10.03a</b> Released 22 April 2020 <ul>
-                        <li>Menu button is no longer obscured by scroll bars on mobile.</li>
-                        <li>Slightly increased size of logo.</li>
-                        <li>Added favicon</li>
-                    </ul>
-                    <b>0.10.02a</b> Released 22 April 2020 <ul>
-                        <li>Mobile version now shows on mobile again!</li>
-                        <li>Fixed scrolling bug on Firefox.</li>
-                    </ul>
-                    <b>0.10.01a</b> Released 20 April 2020 <ul>
-                        <li>Fixed bug where mobile menu would conceal text.</li>
-                    </ul>
-                    <b>0.10a:</b> Released 20 April 2020
-                    <p>Major release!</p>
-                    <ul>
-                        <li>Revised header design.</li>
-                        <li>Changed color of contact button.</li>
-                        <li>Contact button now changes color when hovering over it.</li>
-                        <li>Removed changelog tab due to problems on mobile.</li>
-                        <li>Version numbers in changelog are now boldened.</li>
-                        <li>Header now sticks to the top of the page when scrolling.</li>
-                    </ul>
-                    <b>0.03.04a:</b> Released 19 April 2020 <ul>
-                        <li>Changed version numbering system.</li>
-                        <li>Re-formatted text.</li>
-                    </ul>
-                    <b>0.03.03a:</b> Released 19 April 2020 <ul>
-                        <li>Made title smaller.</li>
-                        <li>Fixed menu bar on iPhones</li>
-                    </ul>
-                    <b>0.03.02a:</b> Released 19 April 2020 <ul>
-                        <li>Changed early development warning message.</li>
-                        <li>Removed Easter eggs.</li>
-                    </ul>
-                    <b>0.03a:</b> Released 18 April 2020 <ul>
-                        <li>Fixed welcome message bug</li>
-                        <li>Fixed error in theming</li>
-                        <li>Fixed website automatically scrolling down when clicking on links</li>
-                        <li>Fixed bug where "home" tab was linking to incorrect page</li>
-                        <li>Fixed bug where footer would get cut off from the bottom of the screen.</li>
-                        <li>Added changelog link</li>
-                        <li>Added "About this site" information</li>
-                        <li>Added note about early development</li>
-                        <li>Changed welcome message</li>
-                        <li>Changed size of site title</li>
-                    </ul>
-                    <br>
-                    <b>0.02a:</b> Released 18 April 2020<ul>
-                        <li>Completely re-built design from ground up!</li>
-                    </ul>
-                    <br>
-                    <b>0.01a:</b> Released 17 April 2020<ul>
-                        <li>First release.</li>
-                    </ul>
-                </p>
             </div>
 
             <script type="text/javascript">
