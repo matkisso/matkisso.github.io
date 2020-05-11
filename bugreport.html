@@ -3,7 +3,7 @@
 @Date:   2020-04-17T23:42:19-07:00
 @Last modified by:   mark
 @Last modified time: 2020-04-17T23:42:29-07:00
-@Description: Website version 2
+@Description: Report a bug page
 -->
 
 <!DOCTYPE html>
@@ -23,7 +23,7 @@
             <div class="navbar-right">
                 <a href="./contact.html" id="contact">contact</a>
                 <a href="./about.html">about</a>
-                <a href="https://matkisso.github.io">home</a>
+                <a href="./index.html">home</a>
             </div>
         </div>
     </nav>
@@ -33,7 +33,7 @@
         <div class="topnav" id="navbar-mobile">
             <a href="https://matkisso.github.io" id="logo">Mark Atkisson</a>
             <div class="navbar-right">
-                <a href="https://matkisso.github.io">home</a>
+                <a href="./index.html">home</a>
                 <a href="./about.html">about</a>
                 <a href="./contact.html" id="contact">contact</a>
             </div>
@@ -66,13 +66,51 @@
             </script>
 
             <div id="text">
-                <h3>Report a bug.</h3>
-                <p>Please describe the bug in as much detail as you can and list any step(s) necessary to reproduce the issue.</p>
-                <p>Also, be sure to list the site version (found <a href="./about.html">here</a>), browser (e.g. Google Chrome,  Firefox, Safari, Opera, Microsoft Edge, etc.) that you are using, as well as the operating system (Android, Windows, iOS, macOS, Linux, etc.) that you are using.</p>
+                <h2>Report a Problem</h2>
+                <p><b>Wait!</b> Before you file a bug report, here are some known issues that are currently being fixed. Please <b>do not file a new bug report</b> for these problems:</p>
+                <p>
+                    <ul>
+                        <li><p>Opening the menu on iOS/Android and then rotating the devices causes a blank spot at the top of the page.</p></li>
+                        <li><p>Menu button is slightly off center on iOS/Android</p></li>
+                    </ul>
+                </p>
+                <br>
+                <p>Please describe the bug in <b>as much detail as you can</b> and <b>list any step(s) necessary to reproduce the issue.</b></p>
+                <p>Also, be sure to list the following information:
+                    <ul>
+                        <li>Site version (found <a href="./about.html">here</a>) under "Site Information".</li>
+                        <li>
+                            <p>The browser you are using, such as:
+                                <ul>
+                                    <li>Google Chrome</li>
+                                    <li>Mozilla Firefox</li>
+                                    <li>Apple Safari</li>
+                                    <li>Opera</li>
+                                    <li>Microsoft Edge</li>
+                                    <li>Other (please specify)</li>
+                                </ul>
+                            </p>
+                        </li>
+                        <li>
+                            <p>The operating system you are using, such as:
+                                <ul>
+                                    <li>Android</li>
+                                    <li>Windows</li>
+                                    <li>iOS/iPadOS</li>
+                                    <li>macOS</li>
+                                    <li>ChromeOS</li>
+                                    <li>Linux (be sure to list which distro you're using also)</li>
+                                    <li>Other (please specify)</li>
+                                </ul>
+                            </p>
+                        </li>
+                    </ul>
+                </p>
+                <p>The more information you provide, the better I am able to diagnose the problem.</p>
                 <br>
                 <p>Click the button below to report a bug.</p>
                 <br>
-                <a class="button" href="mailto:matkisso@ucsd.edu?Subject=Bug%20Report">Report</a>
+                <a class="button" href="mailto:matkisso@ucsd.edu?Subject=Bug%20Report">Report a Bug</a>
             </div>
 
             <script type="text/javascript">
@@ -96,7 +134,19 @@
             </script>
 
         </div>
-        <footer id="footer">Made with ❤️ by <b>Mark Atkisson</b> © 2020 All rights reserved.</footer>
+        <footer id="footer">Made with ❤️ by <b>Mark Atkisson</b>
+            <br>
+            <br>
+            <div class="footer-links">
+                <a href="./index.html">Home</a>
+                <a href="./about.html">About</a>
+                <a href="./contact.html">Contact</a>
+                <a href="./changelog.html">Changelog</a>
+                <a href="./links.html">Links</a>
+                <a href="./bugreport.html">Report a Problem</a>
+            </div>
+            <br><p id="copyright">© 2020 Mark Atkisson</p>
+        </footer>
     </div>
 </body>
 </html>
