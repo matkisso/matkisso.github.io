@@ -2,7 +2,7 @@
 * @Author: mark
 * @Date:   2020-04-17T23:43:18-07:00
  * @Last modified by:   mark
- * @Last modified time: 2020-05-13T23:05:28-07:00
+ * @Last modified time: 2020-05-13T23:38:20-07:00
 * @Description: Theme engine
 */
 
@@ -90,6 +90,9 @@ header {
     padding-right: 12px;
     display: none;
 }
+.mobile .navbar-right a {
+    padding-left: 18px;
+}
 /* When the screen is less than 600 pixels wide, hide all links. Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
     .topnav a:not(:first-child) {display: none;}
@@ -99,8 +102,8 @@ header {
         display: block;
         padding: 12px;
         position: absolute;
-        right: 1rem;
-        top: 0.75rem;
+        right: 12px;
+        top: 13px;
     }
     .navbar-right {
         padding-right: 0px;
@@ -126,8 +129,8 @@ header {
     }
     .topnav.responsive a.icon {
         position: absolute;
-        right: 1rem;
-        top: 0.75rem;
+        right: 12px;
+        top: 13px;
     }
     .topnav.responsive a {
         float: none;
@@ -393,5 +396,8 @@ Interests stuff
     }
     #content-wrap {
         padding-bottom: 10rem;    /* Footer height */
+    }
+    #footer {
+        bottom: -3rem;
     }
 }
