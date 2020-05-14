@@ -2,7 +2,7 @@
 * @Author: mark
 * @Date:   2020-04-17T23:43:18-07:00
  * @Last modified by:   mark
- * @Last modified time: 2020-05-11T00:02:08-07:00
+ * @Last modified time: 2020-05-13T23:05:28-07:00
 * @Description: Theme engine
 */
 
@@ -209,6 +209,9 @@ Video stuff
         width: auto;
         height: auto;
     }
+    .images-mobile {
+        width: 300px;
+    }
 }
 .videos-wrapper-desktop {
     text-align: center;
@@ -290,6 +293,9 @@ Interests stuff
     padding-left: 20px;
     padding-right: 20px;
 }
+.images-mobile {
+    width: 300px;
+}
 .general-interests {
     display: inline-block;
 }
@@ -311,6 +317,15 @@ Interests stuff
     padding-left: 0px;
     padding-right: 0px;
 }
+.interests-wrapper-desktop-slim {
+    text-align: center;
+}
+.captions-wrapper-desktop-slim {
+    text-align: center;
+}
+.interests-wrapper-mobile {
+    text-align: center;
+}
 @media screen and (max-width: 1703px) {
     .interests-wrapper-desktop {
         display: none;
@@ -320,11 +335,22 @@ Interests stuff
     }
 }
 @media screen and (min-width: 1704px) {
-    .interests-wrapper-mobile {
+    .interests-wrapper-desktop-slim {
         display: none;
     }
-    .interests-wrapper-mobile.clear {
-        display: inline-block;
+    .captions-wrapper-desktop-slim {
+        display: none;
+    }
+}
+@media screen and (max-width: 1180px) {
+    .interests-wrapper-desktop-slim {
+        display: none;
+    }
+    .captions-wrapper-desktop-slim {
+        display: none;
+    }
+    .interests-wrapper-mobile {
+        display: block;
     }
 }
 
