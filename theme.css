@@ -2,7 +2,7 @@
 * @Author: mark
 * @Date:   2020-04-17T23:43:18-07:00
  * @Last modified by:   mark
- * @Last modified time: 2020-05-13T23:38:20-07:00
+ * @Last modified time: 2020-05-13T23:50:12-07:00
 * @Description: Theme engine
 */
 
@@ -175,12 +175,20 @@ Text stuff
 
 
 /*
-Video stuff
+Media stuff
  */
+ @media screen and (max-width: 1180px) {
+     .images-mobile {
+         width: 800px;
+     }
+ }
 @media screen and (max-width: 900px) {
     .videos-mobile {
         width: 800px;
         height: 450px;
+    }
+    .images-mobile {
+        width: 800px;
     }
 }
 @media screen and (max-width: 840px) {
@@ -188,11 +196,17 @@ Video stuff
         width: 720px;
         height: 405px;
     }
+    .images-mobile {
+        width: 720px;
+    }
 }
 @media screen and (max-width: 760px) {
     .videos-mobile {
         width: 640px;
         height: 360px;
+    }
+    .images-mobile {
+        width: 640px;
     }
 }
 @media screen and (max-width: 700px) {
@@ -200,11 +214,17 @@ Video stuff
         width: 560px;
         height: 315px;
     }
+    .images-mobile {
+        width: 560px;
+    }
 }
 @media screen and (max-width: 640px) {
     .videos-mobile {
         width: 400px;
         height: 225px;
+    }
+    .images-mobile {
+        width: 400px;
     }
 }
 @media screen and (max-width: 600px) {
@@ -295,9 +315,6 @@ Interests stuff
     width: 500px;
     padding-left: 20px;
     padding-right: 20px;
-}
-.images-mobile {
-    width: 300px;
 }
 .general-interests {
     display: inline-block;
