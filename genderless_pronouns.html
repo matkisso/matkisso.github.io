@@ -1,0 +1,120 @@
+<!--
+@Author: mark
+@Date:   2020-04-17T23:42:19-07:00
+@Last modified by:   mark
+@Last modified time: 2020-04-17T23:42:29-07:00
+@Description: Richard Stallman genderless pronouns argument.
+-->
+
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="theme.css"/>
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/matkisso/matkisso.github.io/master/resources/favicon.png">
+    <!--<link rel="shortcut icon" href="">-->
+</head>
+
+<header id="header">
+    <!-- Desktop navigation bar -->
+    <nav class="desktop">
+        <div class="topnav" id="navbar">
+            <a href="https://matkisso.github.io" id="logo">Mark Atkisson</a>
+            <div class="navbar-right">
+                <a href="./contact.html" id="contact">contact</a>
+                <a href="./about.html">about</a>
+                <a href="https://matkisso.github.io">home</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile navigation bar -->
+    <nav class="mobile">
+        <div class="topnav" id="navbar-mobile">
+            <a href="https://matkisso.github.io" id="logo">Mark Atkisson</a>
+            <div class="navbar-right">
+                <a href="https://matkisso.github.io">home</a>
+                <a href="./about.html">about</a>
+                <a href="./contact.html" id="contact">contact</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="openMenu()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </nav>
+</header>
+
+<body class="header">
+    <div id="page-container" class="content">
+        <div id="content-wrap">
+            <!-- all other page content-->
+            <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+            <script type="text/javascript">
+                /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+                function openMenu() {
+                    var x = document.getElementById("navbar-mobile");
+                    if (x.className == "topnav") {
+                        x.className += " responsive";
+                        document.getElementById("page-container").style.top = "120px";
+                    } else {
+                        x.className = "topnav";
+                        document.getElementById("page-container").style.top = "0px";
+                    }
+                }
+            </script>
+
+            <div id="text">
+                <h1>Better Genderless Pronouns in English</h1>
+                <p>If you haven't already, please read Richard Stallman's original article <a href="https://stallman.org/articles/genderless-pronouns.html" target="_blank">here</a> before continuing.</p>
+                <br>
+                <h2>My Opinion:</h2>
+                <p>The increasing number of people who do not wish to identify with a specific gender has posed a problem with the English language in recent years. In the past, we would usually address everyone as ‘he’, but that is now viewed as sexist, and addressing everyone as ‘she’ is just reverse sexism. Addressing people as “he or she” or “he/she” is cumbersome and does not account for those who identify as genderless. Society tells us we should use ‘they’ to describe these people, but this is problematic – and here’s why.</p>
+                <p>The word ‘they’ is plural, not singular. Richard M. Stallman, one of the most brilliant computer scientists of all time (of GNU Project fame), wrote an article on his website to address the issue. In the article, he claims the use of ‘they’ as a singular pronoun “violates the grammar of English so deeply that it feels terribly wrong.” and I agree. If you still aren’t convinced, Stallman’s article presents several good examples of why using ‘they’ as a singular genderless pronoun is confusing and ambiguous.</p>
+                <p>That’s great and all, but what should we do instead? Stallman proposes using an artificial new pronoun that fits into the English language well. He claims that the best solution is to use the pronouns coined by Marge Piercy: ‘person’, ‘per’, and ‘pers’ since they are easy to remember, and since the last two sound like ‘her’ and ‘hers’, the new pronouns will roll off the tongue easier. Since Stallman finds ‘person’ too slow to say, he uses the alternative ‘perse’ instead. Although ‘perse’ sounds like ‘purse’, in practice confusion between the two is impossible due to context clues within sentences. I encourage you to read Stallman’s article to see an example of why this is.</p>
+                <p>Stallman’s article claims that we should not have to conform English grammar to address everyone by per pronouns. Again, his article presents a good example of why this practice is confusing. If you still aren’t convinced, try reading something like Sam Smith’s Wikipedia page – where every pronoun is replaced by ‘they’ – it doesn’t make sense. Instead, Stallman argues that we should use the alternative gender-neutral pronouns to avoid confusion.</p>
+                <p>I agree that Stallman’s suggestion of using ‘perse’, ‘per’ and ‘pers’ presents a perfect way to solve this modern-day conundrum. While the aesthetic is similar to Stallman’s other articles, the text is small, isn’t arranged in an easy-to-read layout, and lacks any italics or bold to highlight specific points that he is trying to make. Most of the text is uniform size, and there are no headers to divide some of the subtopics within the article. </p>
+                <p>There are also no graphics of any sort; a simple graphic might make anyone who wants to transition to using Stallman’s suggested pronouns understand when to use ‘perse’, ‘per’, or ‘pers’ a bit more clearly, although the article does state that ‘perse’ is equivalent to ‘he/she’, ‘per’ to ‘him/her’, and ‘pers’ to ‘his/hers’. Still, I think a simple chart would clear things up. I also think some graphics with the examples would help the examples to stand out on the page and further emphasize the point of the article. </p>
+                <p>Currently the article’s authority and credibility primarily relies on Stallman’s computer science prowess, but with a few tweaks I think it would be better and maybe more people would pay attention to the message.</p>
+                <br>
+                <p>What do you think? Feel free to let me know – my contact information is on the contact page.</p>
+            </div>
+
+            <script type="text/javascript">
+                // When the user scrolls the page, execute myFunction
+                window.onscroll = function() {stickHeader()};
+
+                // Get the navbar
+                var navbar = document.getElementById("header");
+
+                // Get the offset position of the navbar
+                var sticky = navbar.offsetTop;
+
+                // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+                function stickHeader() {
+                    if (window.pageYOffset >= sticky) {
+                        navbar.classList.add("sticky")
+                    } else {
+                        navbar.classList.remove("sticky");
+                    }
+                }
+            </script>
+
+        </div>
+        <footer id="footer">Made with ❤️ by <b>Mark Atkisson</b>
+            <br>
+            <br>
+            <div class="footer-links">
+                <a href="https://matkisso.github.io">Home</a>
+                <a href="./about.html">About</a>
+                <a href="./contact.html">Contact</a>
+                <a href="./changelog.html">Changelog</a>
+                <a href="./related_sites.html">Related Sites</a>
+                <a href="./report_a_problem.html">Report a Problem</a>
+            </div>
+            <br><p id="copyright">© 2020 Mark Atkisson</p>
+        </footer>
+    </div>
+</body>
+</html>
