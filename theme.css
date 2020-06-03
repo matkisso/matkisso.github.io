@@ -2,13 +2,13 @@
 * @Author: mark
 * @Date:   2020-04-17T23:43:18-07:00
  * @Last modified by:   mark
- * @Last modified time: 2020-06-02T21:06:53-07:00
+ * @Last modified time: 2020-06-02T22:58:28-07:00
 * @Description: Theme engine
 */
 
 /*
 Header stuff
- */
+*/
 #text {
     font-size: 18px;
 }
@@ -155,7 +155,7 @@ header {
 
 /*
 Text stuff
- */
+*/
 #text {
     margin-left:30px;
     margin-top:50px;
@@ -179,12 +179,12 @@ Text stuff
 
 /*
 Media stuff
- */
- @media screen and (max-width: 1180px) {
-     .images-mobile {
-         width: 500px;
-     }
- }
+*/
+@media screen and (max-width: 1180px) {
+    .images-mobile {
+        width: 500px;
+    }
+}
 @media screen and (max-width: 900px) {
     .videos-mobile {
         width: 560px;
@@ -308,8 +308,42 @@ Media stuff
 
 
 /*
-Report a bug stuff
+Contact form
  */
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+    font-size: 16px;
+}
+
+/* Add a background color and some padding around the form */
+.form-container {
+    border-radius: 5px;
+    padding: 20px;
+}
+
+/* Submit button */
+#form-submit {
+    padding: 8px;
+    font-size: 12px;
+    border-radius: 8px;
+    border: none;
+    text-decoration: none;
+    background-color: dodgerblue;
+    color: white;
+}
+
+
+/*
+Report a bug stuff
+*/
 a.button {
     -webkit-appearance: button;
     -moz-appearance: button;
@@ -319,6 +353,10 @@ a.button {
     color: initial;
 }
 
+
+/*
+Charts
+*/
 .chart {
     text-align: center;
 }
@@ -328,7 +366,7 @@ a.button {
 
 /*
 Interests stuff
- */
+*/
 .interests-wrapper-desktop {
     text-align: center;
     width: 100%;
@@ -405,8 +443,8 @@ Interests stuff
 }
 
 /*
- Footer stuff
- */
+Footer stuff
+*/
 #page-container {
     position: relative;
     min-height: 100vh;

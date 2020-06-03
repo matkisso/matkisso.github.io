@@ -67,9 +67,27 @@
 
             <div id="text">
                 <h2>Contact Information</h2>
-                <p>If you need to contact me for any reason, the best way is to send me an email. I'll try to get back to you as soon as possible!</p>
+                <p>If you need to contact me for any reason, the best way is through this contact form. I'll try to get back to you as soon as possible!</p>
                 <br>
-                <p><b>Email:</b> matkisso (at) ucsd (dot) edu</p>
+
+                <div class="form-container">
+                    <form method="post" enctype="text/plain" action="./feedback.php">
+                        Name:<br>
+                        <input type="text" name="name" style="font-size: 16px;"><br>
+                        <br>
+                        Subject:
+                        <select name="Subject" style="font-size: 16px;">
+                            <option value="Site Feedback">Site Feedback</option>
+                            <option value="Other">Other</option>
+                        </select><br>
+                        <br>
+                        Message:<br>
+                        <textarea name="msg"></textarea><br>
+                        <br>
+                        <button id="form-submit">Send your message</button>
+                    </form>
+                </div>
+
             </div>
 
             <script type="text/javascript">
