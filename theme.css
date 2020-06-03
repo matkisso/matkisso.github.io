@@ -2,7 +2,7 @@
 * @Author: mark
 * @Date:   2020-04-17T23:43:18-07:00
  * @Last modified by:   mark
- * @Last modified time: 2020-05-31T21:03:58-07:00
+ * @Last modified time: 2020-06-02T21:06:53-07:00
 * @Description: Theme engine
 */
 
@@ -319,6 +319,12 @@ a.button {
     color: initial;
 }
 
+.chart {
+    text-align: center;
+}
+.chart-image {
+    width: 50%;
+}
 
 /*
 Interests stuff
@@ -388,6 +394,9 @@ Interests stuff
     }
     .interests-wrapper-mobile {
         display: block;
+    }
+    .chart-image {
+        width: 100%;
     }
 }
 .stallman-button {
