@@ -71,18 +71,25 @@
                 <br>
 
                 <div class="form-container">
-                    <form method="post" enctype="text/plain" action="./feedback.php">
-                        Name:<br>
-                        <input type="text" name="name" style="font-size: 16px;"><br>
+                    <form method="post" enctype="text/plain" action="./contact.php">
+                        <label for="name">Name</label> <small style="font-size:12px;">(optional)</small><br>
+                        <input type="text" name="name" style="font-size: 16px;" placeholder="John Doe"><br>
                         <br>
-                        Subject:
-                        <select name="Subject" style="font-size: 16px;">
+                        <label for="email">E-mail</label><br>
+                        <input type="email" name="email" style="font-size: 16px;" placeholder="someone@example.com" required><br>
+                        <br>
+                        <label for="phone">Phone</label> <small style="font-size:12px;">(optional)</small><br>
+                        <input type="tel" name="phone" style="font-size: 16px;" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
+                        <br>
+                        <label for="subject">Subject</label><br>
+                        <select name="subject" style="font-size: 16px;" required>
+                            <option value="Default" disabled selected>– Select –</option>
                             <option value="Site Feedback">Site Feedback</option>
                             <option value="Other">Other</option>
                         </select><br>
                         <br>
-                        Message:<br>
-                        <textarea name="msg"></textarea><br>
+                        <label for="msg">Message</label><br>
+                        <textarea name="msg" style="font-family:Helvetica;" placeholder="Say something"></textarea><br>
                         <br>
                         <button type="submit" id="form-submit">Send your message</button>
                     </form>
