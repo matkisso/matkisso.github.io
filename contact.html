@@ -65,37 +65,105 @@
                 }
             </script>
 
+
             <div id="text">
                 <h2>Contact Information</h2>
-                <p>If you need to contact me for any reason, the best way is through this contact form. I'll try to get back to you as soon as possible!</p>
+                <p><b>Note: </b>If you would like to report a bug, please visit the <a href="./report_a_problem.html">report a problem</a> page.</p>
                 <br>
-
+                <p>Otherwise, if you need to contact me for any reason, <b>the best way is through this contact form.</b> I will try to get back to you within 24 hours.</p>
+                <br>
+                <br>
                 <div class="form-container">
-                    <form method="post" enctype="text/plain" action="./contact.php">
+                    <form name="contactform" method="post" enctype="text-plain" id="contact-form" action="#" accept-charset="UTF-8">
                         <label for="name">Name</label> <small style="font-size:12px;">(optional)</small><br>
-                        <input type="text" name="name" style="font-size: 16px;" placeholder="John Doe"><br>
+                        <input id="name" type="text" name="name" style="font-size: 16px;" placeholder="John Doe"><br>
                         <br>
-                        <label for="email">E-mail</label><br>
-                        <input type="email" name="email" style="font-size: 16px;" placeholder="someone@example.com" required><br>
+                        <label for="email">E-mail</label> <small style="font-size:12px;">(optional)</small><br>
+                        <input id="email" type="email" name="email" style="font-size: 16px;" placeholder="someone@example.com"><br>
                         <br>
                         <label for="phone">Phone</label> <small style="font-size:12px;">(optional)</small><br>
-                        <input type="tel" name="phone" style="font-size: 16px;" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
+                        <input id="phone" type="tel" name="phone" style="font-size: 16px;" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
                         <br>
                         <label for="subject">Subject</label><br>
-                        <select name="subject" style="font-size: 16px;" required>
-                            <option value="Default" disabled selected>– Select –</option>
+                        <select id="subject" name="subject" style="font-size: 16px;" required>
+                            <option value="Default" selected disabled>– Select –</option>
                             <option value="Site Feedback">Site Feedback</option>
+                            <option value="More Information">Request More Information</option>
+                            <option value="Business Inquiry">Business Inquiry</option>
                             <option value="Other">Other</option>
                         </select><br>
                         <br>
-                        <label for="msg">Message</label><br>
-                        <textarea name="msg" style="font-family:Helvetica;" placeholder="Say something"></textarea><br>
+                        <!--<label for="msg">Message</label><br>
+                        <textarea id="message" name="msg" style="font-family:Helvetica; resize:vertical;" placeholder="Say something" spellcheck="true" required></textarea><br>
+                        <br>-->
                         <br>
-                        <button type="submit" id="form-submit">Send your message</button>
+                        <small style="font-size:14px;"><b>Note: </b>Due to limitations with GitHub Pages, clicking the "Send" button below will open your email application, where you must type your message and send it manually.</small><br>
+                        <br>
+                        <br>
+                        <a href="#" id="send-message-button">Send</a>
+                        <!--<button type="submit" name="send-message-button" id="send-message-button">Send your message</button><br>
+                        <br>
+                        <p id="test">Test</p>-->
                     </form>
                 </div>
-
             </div>
+
+            <!-- JS to handle emails -->
+            <script language="JavaScript" type="text/javascript">
+
+                var button = document.getElementById('send-message-button');
+                button.onclick = function () {
+                    button.href = "mailto:matkisso@ucsd.edu";
+                    button.href += getSubject();
+                    button.href += "&body="
+                    button.href += getName();
+                    button.href += "%0D%0A%0D%0A";
+                    button.href += getEmail();
+                    button.href += "%0D%0A%0D%0A";
+                    button.href += getPhone();
+                    button.href += "%0D%0A%0D%0A";
+                    window.location.href = "./thanks_contact.html";
+                }
+
+                /*function sendEmail() {
+                    var action = "mailto:matkisso@ucsd.edu";
+                    action += getSubject();
+                    action += "&body=";
+                    action += getBody();
+                    var para = document.getElementById('test');
+                    para.innerHTML = action;
+                    var formObject = document.getElementById('contact-form');
+                    formObject.action = action;
+                }*/
+
+                function getSubject() {
+                    var subject = document.getElementById('subject');
+                    return '?subject=' + subject.options[subject.selectedIndex].text;
+                }
+
+                function getName() {
+                    var form = document.getElementById('contact-form');
+                    var name = form.elements["name"];
+                    return "Name: " + name.value;
+                }
+
+                function getEmail() {
+                    var form = document.getElementById('contact-form');
+                    var email = form.elements["email"];
+                    return "E-mail: " + email.value;
+                }
+
+                function getPhone() {
+                    var form = document.getElementById('contact-form');
+                    var phone = form.elements["phone"];
+                    return "Phone: " + phone.value;
+                }
+
+                function getBody() {
+                    return "Message: " + document.getElementById('message').value;
+                }
+
+            </script>
 
             <script type="text/javascript">
                 // When the user scrolls the page, execute myFunction
