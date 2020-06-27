@@ -2,7 +2,7 @@
 * @Author: mark
 * @Date:   2020-04-17T23:43:18-07:00
  * @Last modified by:   mark
- * @Last modified time: 2020-06-03T14:49:55-07:00
+ * @Last modified time: 2020-06-26T20:44:14-07:00
 * @Description: Theme engine
 */
 
@@ -180,7 +180,7 @@ Text stuff
 /*
 Media stuff
 */
-@media screen and (max-width: 1180px) {
+@media screen and (max-width: 1200px) {
     .images-mobile {
         width: 500px;
     }
@@ -409,7 +409,7 @@ Interests stuff
 .interests-wrapper-mobile {
     text-align: center;
 }
-@media screen and (max-width: 1703px) {
+@media screen and (max-width: 1830px) {
     .interests-wrapper-desktop {
         display: none;
     }
@@ -417,7 +417,7 @@ Interests stuff
         display: none;
     }
 }
-@media screen and (min-width: 1704px) {
+@media screen and (min-width: 1831px) {
     .interests-wrapper-desktop-slim {
         display: none;
     }
@@ -425,7 +425,7 @@ Interests stuff
         display: none;
     }
 }
-@media screen and (max-width: 1180px) {
+@media screen and (max-width: 1200px) {
     .interests-wrapper-desktop-slim {
         display: none;
     }
