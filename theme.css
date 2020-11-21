@@ -2,7 +2,7 @@
 * @Author: mark
 * @Date:   2020-04-17T23:43:18-07:00
  * @Last modified by:   mark
- * @Last modified time: 2020-06-26T21:51:01-07:00
+ * @Last modified time: 2020-11-20T18:23:35-08:00
 * @Description: Theme engine
 */
 
@@ -41,6 +41,7 @@ header {
     font-weight: bold;
     padding-top: 6px;
     padding-left: 16px;
+    color: #0047AB;
     background-color: #cfd8dc;
 }
 #navbar-mobile #logo {
@@ -48,6 +49,7 @@ header {
     font-weight: bold;
     padding-top: 2px;
     padding-left: 16px;
+    color: #0047AB;
     background-color: #cfd8dc;
 }
 #navbar-mobile #contact {
@@ -57,6 +59,12 @@ header {
 #navbar-mobile #contact:hover {
     background-color: #f1f1f1;
     color: blackr;
+}
+h2 {
+    color: #0047AB;
+}
+h4 {
+    color: darkorange;
 }
 /* Right navbar links */
 .navbar-right {
@@ -72,7 +80,7 @@ header {
     color: white;
 }
 .navbar-right #contact:hover {
-    background-color: orange;
+    background-color: darkorange;
     color: white;
 }
 /* Keep all links the same color */
