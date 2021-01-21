@@ -72,12 +72,12 @@
                 <p><b>Note: </b>If you would like to report a bug, please visit the <a href="./report_a_problem.html">report a problem</a> page.</p>
                 <br>
                 <p>Otherwise, if you need to contact me for any reason, <b>the best way is through this contact form.</b> I will try to get back to you within 24 hours.</p>
-                <br>
+                <!--<br>
                 <br>
                 <div class="form-container">
                     <form name="contactform" method="post" enctype="text-plain" id="contact-form" action="#" accept-charset="UTF-8">
                         <label for="name">Name</label> <small style="font-size:12px;">(optional)</small><br>
-                        <input id="name" type="text" name="name" style="font-size: 16px;" placeholder="John Doe"><br>
+                        <input id="name" type="text" name="name" style="font-size: 16px;" placeholder="Your name here!"><br>
                         <br>
                         <label for="email">E-mail</label> <small style="font-size:12px;">(optional)</small><br>
                         <input id="email" type="email" name="email" style="font-size: 16px;" placeholder="someone@example.com"><br>
@@ -91,22 +91,21 @@
                             <option value="Site Feedback">Site Feedback</option>
                             <option value="More Information">Request More Information</option>
                             <option value="Business Inquiry">Business Inquiry</option>
-                            <option value="Other">Other</option>
+                            <option value="Other">Other – Please Specify</option>
                         </select><br>
                         <br>
-                        <!--<label for="msg">Message</label><br>
-                        <textarea id="message" name="msg" style="font-family:Helvetica; resize:vertical;" placeholder="Say something" spellcheck="true" required></textarea><br>
-                        <br>-->
                         <br>
-                        <small style="font-size:14px;"><b>Note: </b>Due to limitations with GitHub Pages, clicking the "Send" button below will open your email application, where you must type your message and send it manually. If for some reason the form above doesn't work, please email matkisso (at) ucsd (dot) edu.</small><br>
+                        <small style="font-size:14px;"><b>Note: </b>Due to limitations with GitHub Pages (specifically, not supporting PHP since it's static only), clicking the "Send" button below will open your default email application, where you must type your message and send it manually. If for some reason the form above doesn't work, please email matkisso (at) ucsd (dot) edu.</small><br>
                         <br>
                         <br>
                         <a href="#" id="send-message-button">Send</a>
-                        <!--<button type="submit" name="send-message-button" id="send-message-button">Send your message</button><br>
-                        <br>
-                        <p id="test">Test</p>-->
                     </form>
-                </div>
+                </div>-->
+                <br>
+                <small style="font-size:14px;"><b>Disclaimer: </b>Due to limitations with GitHub Pages, clicking the "Send" button below will open your default email application, where you must type your message and send it manually.</small><br>
+                <br>
+                <br>
+                <a href="#" id="send-message-button">Send</a>
             </div>
 
             <!-- JS to handle emails -->
@@ -115,29 +114,18 @@
                 var button = document.getElementById('send-message-button');
                 button.onclick = function () {
                     button.href = "mailto:matkisso@ucsd.edu";
-                    button.href += getSubject();
+                    /*button.href += "?subject="//getSubject();
                     button.href += "&body="
                     button.href += getName();
                     button.href += "%0D%0A%0D%0A";
                     button.href += getEmail();
                     button.href += "%0D%0A%0D%0A";
                     button.href += getPhone();
-                    button.href += "%0D%0A%0D%0A";
+                    button.href += "%0D%0A%0D%0A";*/
                     window.location.href = "./thanks_contact.html";
                 }
 
-                /*function sendEmail() {
-                    var action = "mailto:matkisso@ucsd.edu";
-                    action += getSubject();
-                    action += "&body=";
-                    action += getBody();
-                    var para = document.getElementById('test');
-                    para.innerHTML = action;
-                    var formObject = document.getElementById('contact-form');
-                    formObject.action = action;
-                }*/
-
-                function getSubject() {
+                /*function getSubject() {
                     var subject = document.getElementById('subject');
                     return '?subject=' + subject.options[subject.selectedIndex].text;
                 }
@@ -162,7 +150,7 @@
 
                 function getBody() {
                     return "Message: " + document.getElementById('message').value;
-                }
+                }*/
 
             </script>
 
