@@ -6,555 +6,354 @@
 @Description: Website version 2
 -->
 
-<!DOCTYPE html>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<html>
+<!doctype html>
+<html lang="en" class="h-100">
 <head>
-    <title>Mark Atkisson | Home</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" href="theme.css"/>
-    <link rel="shortcut icon" href="https://raw.githubusercontent.com/mark-atkisson/mark-atkisson.github.io/master/resources/favicon.png">
-    <!--<link rel="shortcut icon" href="">-->
+
+    <title>Mark Atkisson | Home</title>
+
 </head>
 
-<header id="header">
-    <!-- Desktop navigation bar -->
-    <nav class="desktop">
-        <div class="topnav" id="navbar">
-            <a href="https://mark-atkisson.github.io" id="logo">Mark Atkisson</a>
-            <div class="navbar-right">
-                <a href="./contact.html" id="contact">contact</a>
-                <a href="./about.html">about</a>
-                <a href="https://mark-atkisson.github.io">home</a>
+<body class="d-flex flex-column h-100">
+
+    <header>
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-expand-md navbar-dark d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom fixed-top bg-white">
+            <div class="container-fluid">
+                <a href="https://mark-atkisson.github.io" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+                    <span class="display-6" id="logo">Mark Atkisson</span>
+                </a>
+
+                <ul class="nav nav-pills" style="margin-right:16px">
+                    <li class="nav-item"><a href="https://mark-atkisson.github.io" class="nav-link active" aria-current="page">Home</a></li>
+                    <li class="nav-item"><a href="./about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="./contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Begin page content -->
+    <main class="flex-shrink-0">
+        <!-- Top page header -->
+        <div class="px-4 py-5 my-5 text-center">
+                <br>
+                <br>
+                <h1 class="display-5 fw-bold">Welcome to my little slice of the Internet!</h1>
+                <br>
+                <div class="col-lg-6 mx-auto">
+                    <p class="lead mb-4"><b>Hi! I'm Mark!</b> I'm a computer science student at the <a href="https://ucsd.edu/">University of California, San Diego</a>. During my time there, I have done projects both inside and outside the classroom, and have become more interested in phenomena within computer science. This site serves as showcase for those projects and interests, as well as being an opportunity to further practice my web development skills.</p>
+                    <p>If you would like to learn more, please visit my <a href="./about.html">about page</a>.</p>
+                    <br>
+                    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                        <!--<a href="./current_projects.html"><button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Current Projects</button></a>
+                        <a href="./former_projects.html"><button type="button" class="btn btn-outline-secondary btn-lg px-4">Former Projects</button></a>-->
+                    </div>
+                </div>
+            </div>
+        <div class="b-example-divider"></div>
+
+        <!-- Current projects header -->
+        <h1 class="display-4 fw-bold text-center pt-5">Current Projects</h1>
+        <h3 class="text-center">Some things I'm currently working on!</h3>
+        <!-- Current project 1 -->
+        <div class="px-4 pt-5 my-5 text-center">
+            <h1 class="display-5 fw-bold">This website!</h1>
+            <div class="col-lg-6 mx-auto">
+                <h4>April 2020 – present</h4>
+                <p class="lead mb-4">I'm currently brushing up on web-development (namely: HTML5, CSS, and JavaScript) to build the very website you're reading this on!</p>
+                <p>This is a long-term project and I plan to update it with new content regularly. You can learn more by reading the changelog <a href="./changelog.html">here</a>.</p>
+                <p>Look around, you might even find some easter eggs here or there!</p>
+                <br>
+            </div>
+            <div class="overflow-hidden" style="max-height: 30vh;">
+                <div class="container px-5">
+                    <!-- TODO: Populate with website screenshot -->
+                    <!--<img src="bootstrap-docs.png" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy">-->
+                </div>
             </div>
         </div>
-    </nav>
-
-    <!-- Mobile navigation bar -->
-    <nav class="mobile">
-        <div class="topnav" id="navbar-mobile">
-            <a href="https://mark-atkisson.github.io" id="logo">Mark Atkisson</a>
-            <div class="navbar-right">
-                <a href="https://mark-atkisson.github.io">home</a>
-                <a href="./about.html">about</a>
-                <a href="./contact.html" id="contact">contact</a>
+        <div class="px-4 pt-5 my-5 text-center">
+            <h1 class="display-5 fw-bold">More Coming Soon!</h1>
+            <div class="col-lg-6 mx-auto">
+                <h4>TBA</h4>
             </div>
-            <a href="javascript:void(0);" class="icon" onclick="openMenu()">
-                <i class="fa fa-bars"></i>
-            </a>
+            <div class="overflow-hidden" style="max-height: 30vh;">
+                <div class="container px-5">
+                    <!-- TODO: Populate with website screenshot -->
+                    <!--<img src="bootstrap-docs.png" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy">-->
+                </div>
+            </div>
         </div>
-    </nav>
-</header>
+        <!-- TODO: Insert more current projects -->
+        <div class="b-example-divider"></div>
 
-<body class="header">
-    <div id="page-container" class="content">
-        <div id="content-wrap">
-            <!-- all other page content-->
-            <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Former projects header -->
+        <h1 class="display-4 fw-bold text-center pt-5 text-muted">Former Projects</h1>
+        <!-- TODO: Former projects text -->
+        <h2 class="text-center">Video Demos</h2>
+        <div class="container col-xxl-8 px-4">
+          <div class="row flex-lg-row-reverse align-items-center g-5">
+            <div class="iframe col-10 col-sm-8 col-lg-6">
+                <!-- TODO: Fix iframe size -->
+                <iframe width="700" height="500" src="https://www.youtube.com/embed/UIyulYYXwQE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="d-block mx-lg-auto img-fluid embed-responsive embed-responsive-16by9 responsive-iframe"></iframe>
+            </div>
+            <div>
+              <h1 class="display-5 fw-bold lh-1 mb-3">Rainy City</h1>
+              <h4>February – March 2020</h4>
+              <p class="lead">Rainy City was my group's final project for my computer graphics class. My two teammates and I were given less than three weeks to implement various graphical features and tie it all together with a creative storyline.</p>
+              <p>We chose to implement a procedurally modeled city, procedurally generated buildings, first-person camera controls, particle effects, a Bézier patch, and collision detection.</p>
+              <p>You can read more about our project by visiting our <a href="https://pchang010.github.io/CSE167-Final-PA/">project blog</a>.</p>
+            </div>
+          </div>
+        </div>
+        <div class="container col-xxl-8 px-4">
+          <div class="row flex-lg align-items-center g-5 py-5">
+            <div class="iframe col-10 col-sm-8 col-lg-6">
+                <iframe width="700" height="500" src="https://www.youtube.com/embed/Wa8uyr1A5rE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="d-block mx-lg-auto img-fluid embed-responsive embed-responsive-16by9 responsive-iframe"></iframe>
+            </div>
+            <div>
+              <h1 class="display-5 fw-bold lh-1 mb-3">You See Housing</h1>
+              <h4>March – June 2019</h4>
+              <p class="lead">You See Housing (a play on words for UC Housing) was my group's term project for my software engineering class. My nine teammates and I were given two weeks to think of an idea for an app or website, and eight weeks to implement our idea from scratch.</p>
+              <p>As Project Manager, I assigned the remaining team members their roles, handled team logistics (such as our twice-a-week code review sessions, team meeting times, and filming days for the final demonstration video), resolved intra-team disputes, gave the software development team deadlines to ensure that we met our target, and created documentation for our app's various features.</p>
+              <p>Our app curated listing data from multiple sites such as Zillow, apartments.com, and more, and allowed the user to view all of that information in one place.</p>
+              <p>You can learn more about our app and the team behind it by watching the demo video.</p>
+            </div>
+          </div>
+        </div>
+        <div class="b-example-divider"></div>
 
-            <script type="text/javascript">
-                /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-                function openMenu() {
-                    var x = document.getElementById("navbar-mobile");
-                    if (x.className == "topnav") {
-                        x.className += " responsive";
-                        document.getElementById("page-container").style.top = "120px";
-                    } else {
-                        x.className = "topnav";
-                        document.getElementById("page-container").style.top = "0px";
-                    }
-                }
-            </script>
-
-            <!-- Main site content -->
-            <div id="text">
-
-                <h1>Welcome to my little slice of the Internet!</h1>
-                <br>
-
-                <p><b style="color: darkorange; font-size:24px">Hi! I'm Mark!</b></p>
-                <p>I'm a computer science student at the <b><a href="https://ucsd.edu/">University of California, San Diego</a></b>. During my time there, I have done several projects both inside and outside the classroom, and have become more interested in phenomena within computer science. This site serves as showcase for those projects and interests, as well as being an opportunity to further practice my web development skills.</p>
-                <p>If you would like to learn more, please visit my <a href="./about.html">about page</a>.</p>
-                <br>
-
-                <h1>Current Projects</h1>
-                <div class="current-projects-wrapper">
-                    <div class="current-projects-info">
-                        <h2>Computer Security</h2>
-                        <h4>January 2021 – present</h4>
-                        <p>I'm currently learning more about computer security, namely the kinds of attacks and the technologies that keep users safe from said attacks. More information coming soon!</p>
+        <!-- Former Projects album -->
+        <section class="py-5 text-center container">
+          <div class="row py-lg-5">
+            <div class="col-lg-6 col-md-8 mx-auto">
+              <h1 class="fw-light">More Former Projects</h1>
+              <p class="lead text-muted">Below is an assortment of some of my other former projects. These don't have video demos, but you can still look at them in the screenshots below.</p>
+              <p>Check back regularly as this section gets updated!</p>
+            </div>
+          </div>
+        </section>
+        <div class="album py-5 bg-light">
+            <div class="container">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#ababab"/><text x="50%" y="50%" fill="#ffffff" dy=".3em">Coming Soon!</text></svg>
+                            <div class="card-body">
+                                <h2>Computer Security</h2>
+                                <p class="card-text">Coming soon!</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-muted">January - March 2021</small>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <br>
-                    <div class="current-projects-info">
-                        <h2>This Website!</h2>
-                        <h4>April 2020 – present</h4>
-                        <p>I'm currently brushing up on web-development (namely: HTML5, CSS, and some JavaScript) to build the very website you're reading this on!</p>
-                        <p>This is a long-term project and I plan to update it with new content regularly. Picking colors for my UI elements and having content scale properly for mobile devices is also giving me more practice with UI design, and maintaining a changelog is giving me practice with software versioning. You can learn more by reading the changelog <a href="./changelog.html">here</a>.</p>
-                        <p>Look around, you might even find some easter eggs here or there!</p>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#ababab"/><text x="50%" y="50%" fill="#ffffff" dy=".3em">Coming Soon!</text></svg>
+                            <div class="card-body">
+                                <h2>Machine Learning</h2>
+                                <p class="card-text">Coming soon!</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-muted">September - December 2020</small>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <br>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="https://raw.githubusercontent.com/mark-atkisson/mark-atkisson.github.io/master/resources/20481.jpg" alt="GUI-2048" class="card-img-top" width="100%" height="225" preserveAspectRatio="xMidYMid slice" focusable="false"><title>GUI 2048</title><rect width="100%" height="100%"/><text x="50%" y="50%" dy=".3em">
+                            <div class="card-body">
+                                <h2>GUI 2048</h2>
+                                <p class="card-text">Using Java applets I created a GUI for the text-based 2048 game that I made.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-muted">March 2018</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END row -->
+
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="https://raw.githubusercontent.com/mark-atkisson/mark-atkisson.github.io/master/resources/2048terminal.jpg" alt="Text-2048" class="card-img-top" width="100%" height="225" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Text 2048</title><rect width="100%" height="100%"/><text x="50%" y="50%" dy=".3em">
+                            <div class="card-body">
+                                <h2>Text 2048</h2>
+                                <p class="card-text">A text-based version of the famous 2048 game. The game is entirely run through the terminal.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-muted">February 2018</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="https://raw.githubusercontent.com/mark-atkisson/mark-atkisson.github.io/master/resources/randommaze.jpg" alt="RandomMaze" class="card-img-top" width="100%" height="225" preserveAspectRatio="xMidYMid slice" focusable="false"><title>RandomMaze</title><rect width="100%" height="100%"/><text x="50%" y="50%" dy=".3em">
+                            <div class="card-body">
+                                <h2>RandomMaze</h2>
+                                <p class="card-text">This simple utility outputs a random maze pattern consisting of '/' and '\' symbols just for fun.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-muted">September 2019</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="https://raw.githubusercontent.com/mark-atkisson/mark-atkisson.github.io/master/resources/spamtext.jpg" alt="SpamText" class="card-img-top" width="100%" height="225" preserveAspectRatio="xMidYMid slice" focusable="false"><title>SpamText</title><rect width="100%" height="100%"/><text x="50%" y="50%" dy=".3em">
+                            <div class="card-body">
+                                <h2>SpamText</h2>
+                                <p class="card-text">The SpamText engine outputs a random sequence of ASCII characters.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-muted">September 2019</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END row -->
+
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#ababab"/><text x="50%" y="50%" fill="#ffffff" dy=".3em">Coming Soon!</text></svg>
+                            <div class="card-body">
+                                <h2>Coming Soon!</h2>
+                                <p class="card-text">Coming soon!</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-muted">TBD</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#ababab"/><text x="50%" y="50%" fill="#ffffff" dy=".3em">Coming Soon!</text></svg>
+                            <div class="card-body">
+                                <h2>Coming Soon!</h2>
+                                <p class="card-text">Coming soon!</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-muted">TBD</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#ababab"/><text x="50%" y="50%" fill="#ffffff" dy=".3em">Coming Soon!</text></svg>
+                            <div class="card-body">
+                                <h2>Coming Soon!</h2>
+                                <p class="card-text">Coming soon!</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-muted">TBD</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END row -->
+                    <!-- END ALBUM -->
                 </div>
-                <br>
-                <br>
-                <h1>Former Projects</h1>
-                <br class="videos-desktop">
-                <h2 class="videos-desktop" style="color:darkorange; font-size:32px">Video Demos</h2>
-                <!-- Different content wrappers for desktop/mobile -->
-                <!-- Video wrapper for desktop -->
-                <div class="videos-wrapper-desktop">
-                    <div id="project-videos">
-                        <iframe width="800" height="450" src="https://www.youtube.com/embed/UIyulYYXwQE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="videos-desktop"></iframe>
-                        <iframe width="800" height="450" src="https://www.youtube.com/embed/Wa8uyr1A5rE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="videos-desktop"></iframe>
-                    </div>
-                </div>
-                <!-- Description wrapper for desktop -->
-                <div class="descriptions-wrapper-desktop">
-                    <div id="project-descriptions">
-                        <div class="descriptions-desktop">
-                            <h2>Rainy City</h2>
-                            <h4>February – March 2020</h4>
-                            <p>Rainy City was my group's final project for my computer graphics class. My two teammates and I were given less than three weeks to implement various graphical features and tie it all together with a creative storyline.</p>
-                            <p>We chose to implement a procedurally modeled city, procedurally generated buildings, first-person camera controls, particle effects, a Bézier patch, and collision detection.</p>
-                            <p>You can read more about our project by visiting our <a href="https://pchang010.github.io/CSE167-Final-PA/">project blog</a>.</p>
-                        </div>
-                        <div class="descriptions-desktop">
-                            <h2>You See Housing</h2>
-                            <h4>March – June 2019</h4>
-                            <p>You See Housing (a play on words for UC Housing) was my group's term project for my software engineering class. My nine teammates and I were given two weeks to think of an idea for an app or website, and eight weeks to implement our idea from scratch.</p>
-                            <p>As Project Manager, I assigned the remaining team members their roles, handled team logistics (such as our twice-a-week code review sessions, team meeting times, and filming days for the final demonstration video), resolved intra-team disputes, gave the software development team deadlines to ensure that we met our target, and created documentation for our app's various features.</p>
-                            <p>Our app curated listing data from multiple sites such as Zillow, apartments.com, and more, and allowed the user to view all of that information in one place.</p>
-                            <p>You can learn more about our app and the team behind it by watching the demo video above.</p>
-                        </div>
-                    </div>
-                </div>
-                <br class="videos-desktop">
-                <br class="videos-desktop">
-                <br class="videos-desktop">
-                <h2 class="videos-desktop" style="color:darkorange; font-size:32px">More Projects</h2>
-                <!-- Former project wrapper for desktop -->
-                <div class="videos-wrapper-desktop">
-                    <div id="project-videos">
-                        <img src="https://raw.githubusercontent.com/mark-atkisson/mark-atkisson.github.io/master/resources/20481.jpg" width="800" class="imgs-desktop">
-                        <img src="https://raw.githubusercontent.com/mark-atkisson/mark-atkisson.github.io/master/resources/2048terminal.jpg" width="800" class="imgs-desktop">
-                    </div>
-                </div>
-                <!-- Description wrapper for desktop -->
-                <div class="descriptions-wrapper-desktop">
-                    <div id="project-descriptions">
-                        <div class="descriptions-desktop">
-                            <h2>GUI-Based 2048</h2>
-                            <h4>March 2018</h4>
-                            <p>Using Java applets I created a GUI for the text-based 2048 game that I made. The GUI consists of the game title in the upper left, a score in the upper right, a background with placeholder squares, and the game tiles themselves. Each number square has a different color value. When combining squares, an animation ensures the motion is seamless. If <a href="https://stallman.org/articles/genderless-pronouns.html">perse</a> makes an invalid move, a warning prompt appears on the screen. When the game is finished, a "game over" message appears on screen, and the game ends. Once the game ends, any further interaction is blocked.</p>
-                        </div>
-                        <div class="descriptions-desktop">
-                            <h2>Text-Based 2048</h2>
-                            <h4>February 2018</h4>
-                            <p>A text-based version of the famous 2048 game. The game is entirely run through the terminal.  It supports the following flags: "-i", "-o", and "-s". The user can use the -i flag and a filename of a saved board to resume where <a href="https://stallman.org/articles/genderless-pronouns.html">perse</a> left off. The user can also use the -o flag and a filepath to tell the game where to save the board. Finally, the user can use the -s flag and a number n to tell the game what board size <a href="https://stallman.org/articles/genderless-pronouns.html">perse</a> wants, where the board will be n x n tiles.</p>
-                            <p>The user can also choose to start a new game by not passing in the -i flag. Upon initialization of a new game, the program generates a new board with 2 randomly placed tiles (either 2's or 4's). From then, the user can move the tiles up, left, down, and right with the W, A, S, and D keys respectively. If the user wants to save the game, <a href="https://stallman.org/articles/genderless-pronouns.html">perse</a> can press the Q key to save the state of the board and the score to the default filepath or the filepath specified in the -o flag.</p>
-                            <p>If the user makes an invalid move, a warning prompt will appear in the terminal, and a usage message will be printed to the screen. When the game ends, a prompt saying "GAME OVER" will be printed to the terminal and the game will end. Once the game ends, any further interaction is blocked.</p>
-                        </div>
-                    </div>
-                </div>
-                <br class="videos-desktop">
-                <br class="videos-desktop">
-                <br class="videos-desktop">
-                <!--<h2 class="videos-desktop">Utilities</h2>-->
-                <!-- Former project wrapper for desktop -->
-                <div class="videos-wrapper-desktop">
-                    <div id="project-videos">
-                        <img src="https://raw.githubusercontent.com/mark-atkisson/mark-atkisson.github.io/master/resources/randommaze.jpg" width="800" class="imgs-desktop">
-                        <img src="https://raw.githubusercontent.com/mark-atkisson/mark-atkisson.github.io/master/resources/spamtext.jpg" width="800" class="imgs-desktop">
-                    </div>
-                </div>
-                <!-- Description wrapper for desktop -->
-                <div class="descriptions-wrapper-desktop">
-                    <div id="project-descriptions">
-                        <div class="descriptions-desktop" id="rainy-city">
-                            <h2>RandomMaze</h2>
-                            <h4>September 2019</h4>
-                            <p>This simple utility outputs a random maze pattern consisting of '/' and '\' symbols just for fun. Inspired by an older computer program written in BASIC – this modern interpretation is written in C.</p>
-                            <p>To use, pass in two numbers, C and R, where C is the number of columns and R is the number of rows that you want printed.</p>
-                        </div>
-                        <div class="descriptions-desktop" id="you-see-housing">
-                            <h2>SpamText</h2>
-                            <h4>July 2019</h4>
-                            <p>The SpamText engine outputs a random sequence of ASCII characters. Use it to play practical jokes on your friends and family, or to annoy those pesky spammers who send you emails or text messages.</p>
-                            <p>To use, pass in a number n, where n is the number of ASCII characters that the program will generate.</p>
-                        </div>
-                    </div>
-                </div>
+            </div>
+        </div>
+        <div class="b-example-divider"></div>
 
-                <br class="videos-desktop">
-                <br class="videos-desktop">
-                <br class="videos-desktop">
-
-                <div class="descriptions-wrapper-desktop">
-                    <div id="project-descriptions">
-                        <div class="descriptions-desktop" id="machine-learning">
-                            <h2>Machine Learning Classifiers</h2>
-                            <h4>September 2020 – December 2020</h4>
-                            <p>I learned about machine learning and implemented classifiers for the famous <a href="http://yann.lecun.com/exdb/mnist/">MNIST</a> data set of handwritten digits in Python using the <a href="https://pytorch.org/">PyTorch</a> and <a href="https://numpy.org/">NumPy</a> libraries. The classifiers I built include: k-nearest-neighbor, univariate Gaussian, multivariate Gaussian, multi-class logisitic regression, feedforward neural net, and convolutional neural net.</p>
-                        </div>
-                        <div class="descriptions-desktop" id="ui-design">
-                            <h2>UI Design</h2>
-                            <h4>August 2017 – October 2017</h4>
-                            <p>I took a few online courses about UI design and app development for both iOS and Android devices and developed applications for both operating systems using Swift and Java respectively.</p>
-                            <p>In addition to this, I used an image editing program to redesign the interfaces of a few of my favorite apps, following the design principles I had learned.</p>
-                        </div>
-                    </div>
-                </div>
-
-
-
-                <!-- Mobile content wrapper -->
-                <h2 class="titles-mobile" style="color:darkorange; font-size:32px">Video Demos</h2>
-                <div class="videos-wrapper-mobile">
-                    <div id="project-videos">
-                        <iframe width="800" height="450" src="https://www.youtube.com/embed/UIyulYYXwQE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="videos-mobile"></iframe>
-                        <br class="titles-mobile">
-                        <div class="descriptions-mobile">
-                            <h2>Rainy City</h2>
-                            <h4>February – March 2020</h4>
-                            <p>Rainy City was my group's final project for my computer graphics class. My two teammates and I were given less than three weeks to implement various graphical features and tie it all together with a creative storyline.</p>
-                            <p>We chose to implement a procedurally modeled city, procedurally generated buildings, first-person camera controls, particle effects, a Bézier patch, and collision detection.</p>
-                            <p>You can read more about our project by visiting our <a href="https://pchang010.github.io/CSE167-Final-PA/">project blog</a>.</p>
-                        </div>
-                        <br class="titles-mobile">
-                        <br class="titles-mobile">
-                        <br class="titles-mobile">
-                        <iframe width="800" height="450" src="https://www.youtube.com/embed/Wa8uyr1A5rE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="videos-mobile"></iframe>
-                        <div class="descriptions-mobile">
-                            <h2>You See Housing</h2>
-                            <h4>March – June 2019</h4>
-                            <p>You See Housing (a play on words for UC Housing) was my group's term project for my software engineering class. My nine teammates and I were given two weeks to think of an idea for an app or website, and eight weeks to implement our idea from scratch.</p>
-                            <p>As Project Manager, I assigned the remaining team members their roles, handled team logistics (such as our twice-a-week code review sessions, team meeting times, and filming days for the final demonstration video), resolved intra-team disputes, gave the software development team deadlines to ensure that we met our target, and created documentation for our app's various features.</p>
-                            <p>Our app curated listing data from multiple sites such as Zillow, apartments.com, and more, and allowed the user to view all of that information in one place.</p>
-                            <p>You can learn more about our app and the team behind it by watching the demo video above.</p>
-                        </div>
-                    </div>
-                </div>
-                <br class="titles-mobile">
-                <br class="titles-mobile">
-                <br class="titles-mobile">
-                <h2 class="titles-mobile" style="color:darkorange; font-size:32px">More Projects</h2>
-                <div class="videos-wrapper-mobile">
-                    <div id="project-videos">
-                        <img src="https://raw.githubusercontent.com/mark-atkisson/mark-atkisson.github.io/master/resources/20481.jpg" width="800" class="images-mobile">
-                        <br class="titles-mobile">
-                        <div class="descriptions-mobile">
-                            <h2>GUI 2048</h2>
-                            <h4>March 2018</h4>
-                            <p>Using Java applets I created a GUI for the text-based 2048 game that I made. The GUI consists of the game title in the upper left, a score in the upper right, a background with placeholder squares, and the game tiles themselves. Each number square has a different color value. When combining squares, an animation ensures the motion is seamless. If <a href="https://stallman.org/articles/genderless-pronouns.html">perse</a> makes an invalid move, a warning prompt appears on the screen. When the game is finished, a "game over" message appears on screen, and the game ends. Once the game ends, any further interaction is blocked.</p>
-                        </div>
-                        <br class="titles-mobile">
-                        <br class="titles-mobile">
-                        <br class="titles-mobile">
-                        <img src="https://raw.githubusercontent.com/mark-atkisson/mark-atkisson.github.io/master/resources/2048terminal.jpg" width="800" class="images-mobile">
-                        <div class="descriptions-mobile">
-                            <h2>Text-Based 2048</h2>
-                            <h4>February 2018</h4>
-                            <p>A text-based version of the famous 2048 game. The game is entirely run through the terminal.  It supports the following flags: "-i", "-o", and "-s". The user can use the -i flag and a filename of a saved board to resume where <a href="https://stallman.org/articles/genderless-pronouns.html">perse</a> left off. The user can also use the -o flag and a filepath to tell the game where to save the board. Finally, the user can use the -s flag and a number n to tell the game what board size <a href="https://stallman.org/articles/genderless-pronouns.html">perse</a> wants, where the board will be n x n tiles.</p>
-                            <p>The user can also choose to start a new game by not passing in the -i flag. Upon initialization of a new game, the program generates a new board with 2 randomly placed tiles (either 2's or 4's). From then, the user can move the tiles up, left, down, and right with the W, A, S, and D keys respectively. If the user wants to save the game, <a href="https://stallman.org/articles/genderless-pronouns.html">perse</a> can press the Q key to save the state of the board and the score to the default filepath or the filepath specified in the -o flag.</p>
-                            <p>If the user makes an invalid move, a warning prompt will appear in the terminal, and a usage message will be printed to the screen. When the game ends, a prompt saying "GAME OVER" will be printed to the terminal and the game will end. Once the game ends, any further interaction is blocked.</p>
-                        </div>
-                    </div>
-                </div>
-                <br class="titles-mobile">
-                <br class="titles-mobile">
-                <br class="titles-mobile">
-                <!--<h2 class="titles-mobile">Utilities</h2>-->
-                <div class="videos-wrapper-mobile">
-                    <div id="project-videos">
-                        <img src="https://raw.githubusercontent.com/mark-atkisson/mark-atkisson.github.io/master/resources/randommaze.jpg" width="800" class="images-mobile">
-                        <br>
-                        <div class="descriptions-mobile">
-                            <h2>RandomMaze</h2>
-                            <h4>September 2019</h4>
-                            <p>This simple utility outputs a random maze pattern consisting of '/' and '\' symbols just for fun. Inspired by an older computer program written in BASIC – this modern interpretation is written in C.</p>
-                            <p>To use, pass in two numbers, C and R, where C is the number of columns and R is the number of rows that you want printed.</p>
-                        </div>
-                        <br class="titles-mobile">
-                        <br class="titles-mobile">
-                        <br class="titles-mobile">
-                        <img src="https://raw.githubusercontent.com/mark-atkisson/mark-atkisson.github.io/master/resources/spamtext.jpg" width="800" class="images-mobile">
-                        <div class="descriptions-mobile">
-                            <h2>SpamText</h2>
-                            <h4>July 2019</h4>
-                            <p>The SpamText engine outputs a random sequence of ASCII characters. Use it to play practical jokes on your friends and family, or to annoy those pesky spammers who send you emails or text messages.</p>
-                            <p>To use, pass in a number n, where n is the number of ASCII characters that the program will generate.</p>
-                        </div>
-                        <br class="titles-mobile">
-                        <br class="titles-mobile">
-                        <br class="titles-mobile">
-                        <div class="descriptions-mobile">
-                            <h2>Machine Learning Classifiers</h2>
-                            <h4>September 2020 – December 2020</h4>
-                            <p>I learned about machine learning and implemented classifiers for the famous <a href="http://yann.lecun.com/exdb/mnist/">MNIST</a> data set of handwritten digits in Python using the <a href="https://pytorch.org/">PyTorch</a> and <a href="https://numpy.org/">NumPy</a> libraries. The classifiers I built include: k-nearest-neighbor, univariate Gaussian, multivariate Gaussian, multi-class logisitic regression, feedforward neural net, and convolutional neural net.</p>
-                        </div>
-                        <br class="titles-mobile">
-                        <br class="titles-mobile">
-                        <br class="titles-mobile">
-                        <div class="descriptions-mobile">
-                            <h2>UI Design</h2>
-                            <h4>August 2017 – October 2017</h4>
-                            <p>I took a few online courses about UI design and app development for both iOS and Android devices and developed applications for both operating systems using Swift and Java respectively.</p>
-                            <p>In addition to this, I used an image editing program to redesign the interfaces of a few of my favorite apps, following the design principles I had learned.</p>
-                        </div>
-                    </div>
-                </div>
-                <br class="titles-mobile">
-                <br class="titles-mobile">
-                <br class="titles-mobile">
-                <br class="titles-mobile">
-
-                <h1>Interests</h1>
-                <p>Here are some things related to computer science that interest me.</p>
-                <br class="videos-desktop">
-                <br class="videos-desktop">
-                <!-- Desktop wrapper -->
-                <div class="desktop">
-                    <div class="interests-wrapper-desktop">
-                        <div class="interests-images">
-                            <img class="images-desktop" src="https://raw.githubusercontent.com/mark-atkisson/mark-atkisson.github.io/master/resources/security.jpg">
-                            <img class="images-desktop" src="https://raw.githubusercontent.com/mark-atkisson/mark-atkisson.github.io/master/resources/opensource.jpg">
-                            <img class="images-desktop" src="https://raw.githubusercontent.com/mark-atkisson/mark-atkisson.github.io/master/resources/privacy.jpg">
-                        </div>
-                    </div>
-                    <!-- Description wrapper for desktop -->
-                    <div class="captions-wrapper-desktop">
-                        <div id="interests-descriptions">
-                            <div class="interests-desktop">
+        <!-- Interests album -->
+        <section class="py-5 text-center container">
+          <div class="row py-lg-5">
+            <div class="col-lg-6 col-md-8 mx-auto">
+              <h1 class="fw-light">Interests</h1>
+              <p class="lead text-muted">Below are some things related to computer science that interest me.</p>
+              <p>Check back regularly as this section gets updated!</p>
+            </div>
+          </div>
+        </section>
+        <div class="album py-5 bg-light">
+            <div class="container">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="https://raw.githubusercontent.com/mark-atkisson/mark-atkisson.github.io/master/resources/security.jpg" alt="Security" class="card-img-top" width="100%" height="225" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Security</title><rect width="100%" height="100%"/><text x="50%" y="50%" dy=".3em">
+                            <div class="card-body">
                                 <h2>Cybersecurity</h2>
-                                <p>Data breaches, malware, and other attacks can put our personal information in danger. Every year, there are many security compromises, which leads to distrust and stolen information which can potentially be used for crime.</p>
-                                <p>My primary interests include: encryption methods, strategies to preempt of attackers, malware distribution, decentralized information storage, read only disk partitions, and physical security keys/passworldless accounts.</p>
-                                <p>With this, we can decrease the risk of our data getting into the wrong hands.</p>
+                                <p class="card-text">Coming soon!</p>
                             </div>
-                            <div class="interests-desktop">
-                                <h2>Open Source Software</h2>
-                                <p>With open source code, many contributors can work on the project. This means that the best minds are free to work on the project, which translates to more efficient, more secure, more reliable code, with more features than closed source counterparts.</p>
-                                <p>The transparency achieved by making the source code publicly available means the end user is free to look through the code so that <a href="https://stallman.org/articles/genderless-pronouns.html">perse</a> can look at how the program works make sure there isn't any malicious code. Additionally, the transparency also makes the company producing the software more credible.</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="https://raw.githubusercontent.com/mark-atkisson/mark-atkisson.github.io/master/resources/opensource.jpg" alt="Free and open source" class="card-img-top" width="100%" height="225" preserveAspectRatio="xMidYMid slice" focusable="false"><title>FOSS</title><rect width="100%" height="100%"/><text x="50%" y="50%" dy=".3em">
+                            <div class="card-body">
+                                <h2>Open Source</h2>
+                                <p class="card-text">Coming soon!</p>
                             </div>
-                            <div class="interests-desktop">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="https://raw.githubusercontent.com/mark-atkisson/mark-atkisson.github.io/master/resources/privacy.jpg" alt="Privacy" class="card-img-top" width="100%" height="225" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Privacy</title><rect width="100%" height="100%"/><text x="50%" y="50%" dy=".3em">
+                            <div class="card-body">
                                 <h2>Privacy</h2>
-                                <p>People are not property, but our personal information is being treated like property – being bought and sold from one company to another.</p>
-                                <p>With more and more websites collecting some sort of information from us, I think it's time for a change.</p>
-                                <p>I believe our information should be private unless there is a valid reason for it to be public. Online privacy should be the default, not something the user must opt-in to.</p>
+                                <p class="card-text">Coming soon!</p>
                             </div>
                         </div>
                     </div>
-                    <br class="videos-desktop">
-                    <br class="videos-desktop">
-                    <!-- Desktop wrapper -->
-                    <div class="interests-wrapper-desktop">
-                        <div class="interests-images">
-                            <img class="images-desktop" src="https://raw.githubusercontent.com/mark-atkisson/mark-atkisson.github.io/master/resources/hid.jpg">
-                            <img class="images-desktop" src="https://raw.githubusercontent.com/mark-atkisson/mark-atkisson.github.io/master/resources/csedu.jpg">
-                            <img class="images-desktop" src="https://raw.githubusercontent.com/mark-atkisson/mark-atkisson.github.io/master/resources/mechs.jpg">
-                        </div>
-                    </div>
-                    <!-- Description wrapper for desktop -->
-                    <div class="captions-wrapper-desktop">
-                        <div id="interests-descriptions">
-                            <div class="interests-desktop">
+                    <!-- END row -->
+
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="https://raw.githubusercontent.com/mark-atkisson/mark-atkisson.github.io/master/resources/hid.jpg" alt="Human Interface Devices" class="card-img-top" width="100%" height="225" preserveAspectRatio="xMidYMid slice" focusable="false"><title>GUI 2048</title><rect width="100%" height="100%"/><text x="50%" y="50%" dy=".3em">
+                            <div class="card-body">
                                 <h2>Human Interface Devices</h2>
-                                <p>Defined as anything that a human uses to interact with a computer, such as a touch screen, mouse, keyboard, headset, webcam, microphone, speaker, and more.</p>
-                                <p>Without the proper precautions, extended computer use can lead to serious injury such as repetitive strain injury (RSI) or carpal tunnel syndrome.</p>
-                                <p>Since people are becoming increasingly reliant on technology – some spend hours in front of computers every day – I'm interested in how we can make these devices more ergonomic so that people are confortable for extended sessions in front of the computer.</p>
+                                <p class="card-text">Coming soon!</p>
                             </div>
-                            <div class="interests-desktop">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="https://raw.githubusercontent.com/mark-atkisson/mark-atkisson.github.io/master/resources/csedu.jpg" alt="CS Education" class="card-img-top" width="100%" height="225" preserveAspectRatio="xMidYMid slice" focusable="false"><title>CS Education</title><rect width="100%" height="100%"/><text x="50%" y="50%" dy=".3em">
+                            <div class="card-body">
                                 <h2>Computer Science Education</h2>
-                                <p>My high school completely lacked computer science curriculum of any sort – it wasn't until I got to college that I was able to take computer science courses in a traditional classroom setting.</p>
-                                <p>This experience made me think about how we can get computer science curriculum into more schools and get more young students interested in the field.</p>
-                                <p>I'm also interested in how we can make computer science education better at a college level through various means such as Peer Instruction.</p>
-                                <p>I have taken two classes related to computer science education during my time at UCSD; you can see my portfolio of works <a href="https://sites.google.com/ucsd.edu/eds124br-mark-a/home">here</a>.</p>
+                                <p class="card-text">Coming soon!</p>
                             </div>
-                            <div class="interests-desktop">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="https://raw.githubusercontent.com/mark-atkisson/mark-atkisson.github.io/master/resources/mechs.jpg" alt="Mechanical Keyboards" class="card-img-top" width="100%" height="225" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Mechanical Keyboards</title><rect width="100%" height="100%"/><text x="50%" y="50%" dy=".3em">
+                            <div class="card-body">
                                 <h2>Mechanical Keyboards</h2>
-                                <p>A few years ago, I switched from a membrane keyboard to a mechanical keyboard and haven't looked back.</p>
-                                <p>In my experience, mechanical keyboards are way nicer to type on, are far more durable, more customizable, and easier to repair than membrane keyboards. I recommend them to anyone who types a lot who doesn't have one already.</p>
-                                <p>I've tried several different boards over the years, and have recently gotten into building my own custom boards.</p>
-                                <p>There are several great resources on my <a href="./related_sites.html">related sites</a> page that you can look at if you want to learn more.</p>
+                                <p class="card-text">Coming soon!</p>
                             </div>
                         </div>
                     </div>
-
-
-                    <!--
-                    Desktop content wrapper slim
-                    -->
-                    <div class="interests-wrapper-desktop-slim">
-                        <div class="interests-images">
-                            <img class="images-desktop" src="https://raw.githubusercontent.com/mark-atkisson/mark-atkisson.github.io/master/resources/security.jpg">
-                            <img class="images-desktop" src="https://raw.githubusercontent.com/mark-atkisson/mark-atkisson.github.io/master/resources/opensource.jpg">
-                        </div>
-                    </div>
-                    <!-- Description wrapper for desktop -->
-                    <div class="captions-wrapper-desktop-slim">
-                        <div id="interests-descriptions">
-                            <div class="interests-desktop">
-                                <h2>Cybersecurity</h2>
-                                <p>Data breaches, malware, and other attacks can put our personal information in danger. Every year, there are many security compromises, which leads to distrust and stolen information which can potentially be used for crime.</p>
-                                <p>My primary interests include: encryption methods, strategies to preempt of attackers, malware distribution, decentralized information storage, read only disk partitions, and physical security keys/passworldless accounts.</p>
-                                <p>With this, we can decrease the risk of our data getting into the wrong hands.</p>
-                            </div>
-                            <div class="interests-desktop">
-                                <h2>Open Source Software</h2>
-                                <p>With open source code, many contributors can work on the project. This means that the best minds are free to work on the project, which translates to more efficient, more secure, more reliable code, with more features than closed source counterparts.</p>
-                                <p>The transparency achieved by making the source code publicly available means the end user is free to look through the code so that <a href="https://stallman.org/articles/genderless-pronouns.html">perse</a> can look at how the program works make sure there isn't any malicious code. Additionally, the transparency also makes the company producing the software more credible.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Desktop wrapper -->
-                    <div class="interests-wrapper-desktop-slim">
-                        <div class="interests-images">
-                            <img class="images-desktop" src="https://raw.githubusercontent.com/mark-atkisson/mark-atkisson.github.io/master/resources/privacy.jpg">
-                            <img class="images-desktop" src="https://raw.githubusercontent.com/mark-atkisson/mark-atkisson.github.io/master/resources/hid.jpg">
-                        </div>
-                    </div>
-                    <!-- Description wrapper for desktop -->
-                    <div class="captions-wrapper-desktop-slim">
-                        <div id="interests-descriptions">
-                            <div class="interests-desktop">
-                                <h2>Privacy</h2>
-                                <p>People are not property, but our personal information is being treated like property – being bought and sold from one company to another.</p>
-                                <p>With more and more websites collecting some sort of information from us, I think it's time for a change.</p>
-                                <p>I believe our information should be private unless there is a valid reason for it to be public. Online privacy should be the default, not something the user must opt-in to.</p>
-                            </div>
-                            <div class="interests-desktop">
-                                <h2>Human Interface Devices</h2>
-                                <p>Defined as anything that a human uses to interact with a computer, such as a touch screen, mouse, keyboard, headset, webcam, microphone, speaker, and more.</p>
-                                <p>Without the proper precautions, extended computer use can lead to serious injury such as repetitive strain injury (RSI) or carpal tunnel syndrome.</p>
-                                <p>Since people are becoming increasingly reliant on technology – some spend hours in front of computers every day – I'm interested in how we can make these devices more ergonomic so that people are confortable for extended sessions in front of the computer.</p>
-                            </div>
-                            </div>
-                        </div>
-                        <!-- Desktop wrapper -->
-                        <div class="interests-wrapper-desktop-slim">
-                            <div class="interests-images">
-                                <img class="images-desktop" src="https://raw.githubusercontent.com/mark-atkisson/mark-atkisson.github.io/master/resources/csedu.jpg">
-                                <img class="images-desktop" src="https://raw.githubusercontent.com/mark-atkisson/mark-atkisson.github.io/master/resources/mechs.jpg">
-                            </div>
-                        </div>
-                        <!-- Description wrapper for desktop -->
-                        <div class="captions-wrapper-desktop-slim">
-                            <div id="interests-descriptions">
-                                <div class="interests-desktop">
-                                    <h2>Computer Science Education</h2>
-                                    <p>My high school completely lacked computer science curriculum of any sort – it wasn't until I got to college that I was able to take computer science courses in a traditional classroom setting.</p>
-                                    <p>This experience made me think about how we can get computer science curriculum into more schools and get more young students interested in the field.</p>
-                                    <p>I'm also interested in how we can make computer science education better at a college level through various means such as Peer Instruction.</p>
-                                    <p>I have taken two classes related to computer science education during my time at UCSD; you can see my portfolio of works <a href="https://sites.google.com/ucsd.edu/eds124br-mark-a/home">here</a>.</p>
-                                </div>
-                                <div class="interests-desktop">
-                                    <h2>Mechanical Keyboards</h2>
-                                    <p>A few years ago, I switched from a membrane keyboard to a mechanical keyboard and haven't looked back.</p>
-                                    <p>In my experience, mechanical keyboards are way nicer to type on, are far more durable, more customizable, and easier to repair than membrane keyboards. I recommend them to anyone who types a lot who doesn't have one already.</p>
-                                    <p>I've tried several different boards over the years, and have recently gotten into building my own custom boards.</p>
-                                    <p>There are several great resources on my <a href="./related_sites.html">related sites</a> page that you can look at if you want to learn more.</p>
-                                </div>
-                            </div>
-                        </div>
+                    <!-- END row -->
+                    <!-- END ALBUM -->
                 </div>
-
-
-                <!--
-                Mobile content wrapper
-                -->
-                <div class="interests-wrapper-mobile mobile">
-                    <div>
-                        <br class="titles-mobile">
-                        <img src="https://raw.githubusercontent.com/mark-atkisson/mark-atkisson.github.io/master/resources/security.jpg" class="images-mobile">
-                        <br>
-                        <div class="interests-mobile">
-                            <h2>Cybersecurity</h2>
-                            <p>Data breaches, malware, and other attacks can put our personal information in danger. Every year, there are many security compromises, which leads to distrust and stolen information which can potentially be used for crime.</p>
-                            <p>My primary interests include: encryption methods, strategies to preempt of attackers, malware distribution, decentralized information storage, read only disk partitions, and physical security keys/passworldless accounts.</p>
-                            <p>With this, we can decrease the risk of our data getting into the wrong hands.</p>
-                        </div>
-                        <br class="titles-mobile">
-                        <br class="titles-mobile">
-                        <br class="titles-mobile">
-                        <img src="https://raw.githubusercontent.com/mark-atkisson/mark-atkisson.github.io/master/resources/opensource.jpg" class="images-mobile">
-                        <div class="interests-mobile">
-                            <h2>Open Source Software</h2>
-                            <p>With open source code, many contributors can work on the project. This means that the best minds are free to work on the project, which translates to more efficient, more secure, more reliable code, with more features than closed source counterparts.</p>
-                            <p>The transparency achieved by making the source code publicly available means the end user is free to look through the code so that <a href="https://stallman.org/articles/genderless-pronouns.html">perse</a> can look at how the program works make sure there isn't any malicious code. Additionally, the transparency also makes the company producing the software more credible.</p>
-                        </div>
-                        <br class="titles-mobile">
-                        <br class="titles-mobile">
-                        <br class="titles-mobile">
-                        <img src="https://raw.githubusercontent.com/mark-atkisson/mark-atkisson.github.io/master/resources/privacy.jpg" class="images-mobile">
-                        <div class="interests-mobile">
-                            <h2>Privacy</h2>
-                            <p>People are not property, but our personal information is being treated like property – being bought and sold from one company to another.</p>
-                            <p>With more and more websites collecting some sort of information from us, I think it's time for a change.</p>
-                            <p>I believe our information should be private unless there is a valid reason for it to be public. Online privacy should be the default, not something the user must opt-in to.</p>
-                        </div>
-                        <br class="titles-mobile">
-                        <br class="titles-mobile">
-                        <br class="titles-mobile">
-                        <img src="https://raw.githubusercontent.com/mark-atkisson/mark-atkisson.github.io/master/resources/hid.jpg" class="images-mobile">
-                        <div class="interests-mobile">
-                            <h2>Human Interface Devices</h2>
-                            <p>Defined as anything that a human uses to interact with a computer, such as a touch screen, mouse, keyboard, headset, webcam, microphone, speaker, and more.</p>
-                            <p>Without the proper precautions, extended computer use can lead to serious injury such as repetitive strain injury (RSI) or carpal tunnel syndrome.</p>
-                            <p>Since people are becoming increasingly reliant on technology – some spend hours in front of computers every day – I'm interested in how we can make these devices more ergonomic so that people are confortable for extended sessions in front of the computer.</p>
-                        </div>
-                        <br class="titles-mobile">
-                        <br class="titles-mobile">
-                        <br class="titles-mobile">
-                        <img src="https://raw.githubusercontent.com/mark-atkisson/mark-atkisson.github.io/master/resources/csedu.jpg" class="images-mobile">
-                        <div class="interests-mobile">
-                            <h2>Computer Science Education</h2>
-                            <p>My high school completely lacked computer science curriculum of any sort – it wasn't until I got to college that I was able to take computer science courses in a traditional classroom setting.</p>
-                            <p>This experience made me think about how we can get computer science curriculum into more schools and get more young students interested in the field.</p>
-                            <p>I'm also interested in how we can make computer science education better at a college level through various means such as Peer Instruction.</p>
-                            <p>I have taken two classes related to computer science education during my time at UCSD; you can see my portfolio of works <a href="https://sites.google.com/ucsd.edu/eds124br-mark-a/home">here</a>.</p>
-                        </div>
-                        <br class="titles-mobile">
-                        <br class="titles-mobile">
-                        <br class="titles-mobile">
-                        <img src="https://raw.githubusercontent.com/mark-atkisson/mark-atkisson.github.io/master/resources/mechs.jpg" class="images-mobile">
-                        <div class="interests-mobile">
-                            <h2>Mechanical Keyboards</h2>
-                            <p>A few years ago, I switched from a membrane keyboard to a mechanical keyboard and haven't looked back.</p>
-                            <p>In my experience, mechanical keyboards are way nicer to type on, are far more durable, more customizable, and easier to repair than membrane keyboards. I recommend them to anyone who types a lot who doesn't have one already.</p>
-                            <p>I've tried several different boards over the years, and have recently gotten into building my own custom boards.</p>
-                            <p>There are several great resources on my <a href="./related_sites.html">related sites</a> page that you can look at if you want to learn more.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <br>
-                <div class="stallman-button">
-                    <img src="https://stallman.org/no-facebook.png" width="200">
-                    <p>Copy <a href="https://stallman.org/no-facebook.png" target="_blank">this button</a> (courtesy of R. M. Stallman and R.Siddharth) to express your rejection of Facebook.</p>
-                </div>
-
             </div>
-
-            <script type="text/javascript">
-                // When the user scrolls the page, execute myFunction
-                window.onscroll = function() {stickHeader()};
-
-                // Get the navbar
-                var navbar = document.getElementById("header");
-
-                // Get the offset position of the navbar
-                var sticky = navbar.offsetTop;
-
-                // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-                function stickHeader() {
-                    if (window.pageYOffset >= sticky) {
-                        navbar.classList.add("sticky")
-                    } else {
-                        navbar.classList.remove("sticky");
-                    }
-                }
-            </script>
-
         </div>
-        <footer id="footer">Made with ❤️ by <b>Mark Atkisson</b>
+        <div class="b-example-divider"></div>
+
+    <!-- Not facebook button -->
+    <div class="stallman-button">
+        <img src="https://stallman.org/no-facebook.png" width="200">
+        <br>
+        <br>
+        <p>Copy <a href="https://stallman.org/no-facebook.png" target="_blank">this button</a> (courtesy of R. M. Stallman and R.Siddharth) to express your rejection of Facebook.</p>
+    </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer mt-auto py-3 bg-light text-center">
+        <div class="container">
+            <span class="text-muted">Made with ❤️ by <b>Mark Atkisson</b></span>
             <br>
             <br>
             <div class="footer-links">
@@ -565,7 +364,8 @@
                 <a href="./related_sites.html">Related Sites</a>
                 <a href="./report_a_problem.html">Report a Problem</a>
             </div>
-            <br><p id="copyright">© 2020-2099 Mark Atkisson</p>
-        </footer>
+            <br><p id="copyright" style="font-size: 12px">© 2020-2099 Mark Atkisson</p>
+        </div>
+    </footer>
 </body>
 </html>

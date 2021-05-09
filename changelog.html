@@ -6,73 +6,91 @@
 @Description: Changelog
 -->
 
-<!DOCTYPE html>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<html>
+<!doctype html>
+<html lang="en" class="h-100">
 <head>
-    <title>Mark Atkisson | Changelog</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" href="theme.css"/>
-    <link rel="shortcut icon" href="https://raw.githubusercontent.com/mark-atkisson/mark-atkisson.github.io/master/resources/favicon.png">
-    <!--<link rel="shortcut icon" href="">-->
+
+    <title>Mark Atkisson | Changelog</title>
+
 </head>
 
-<header id="header">
-    <!-- Desktop navigation bar -->
-    <nav class="desktop">
-        <div class="topnav" id="navbar">
-            <a href="https://mark-atkisson.github.io" id="logo">Mark Atkisson</a>
-            <div class="navbar-right">
-                <a href="./contact.html" id="contact">contact</a>
-                <a href="./about.html">about</a>
-                <a href="https://mark-atkisson.github.io">home</a>
+<body class="d-flex flex-column h-100">
+
+    <header>
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-expand-md navbar-dark d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom fixed-top bg-white">
+            <div class="container-fluid">
+                <a href="https://mark-atkisson.github.io" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+                    <span class="display-6" id="logo">Mark Atkisson</span>
+                </a>
+
+                <ul class="nav nav-pills" style="margin-right:16px">
+                    <li class="nav-item"><a href="https://mark-atkisson.github.io" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="./about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="./contact.html" class="nav-link">Contact</a></li>
+                </ul>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
-    <!-- Mobile navigation bar -->
-    <nav class="mobile">
-        <div class="topnav" id="navbar-mobile">
-            <a href="https://mark-atkisson.github.io" id="logo">Mark Atkisson</a>
-            <div class="navbar-right">
-                <a href="https://mark-atkisson.github.io">home</a>
-                <a href="./about.html">about</a>
-                <a href="./contact.html" id="contact">contact</a>
-            </div>
-            <a href="javascript:void(0);" class="icon" onclick="openMenu()">
-                <i class="fa fa-bars"></i>
-            </a>
-        </div>
-    </nav>
-</header>
-
-<body class="header">
-    <div id="page-container" class="content">
-        <div id="content-wrap">
-            <!-- all other page content-->
-            <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-            <script type="text/javascript">
-                /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-                function openMenu() {
-                    var x = document.getElementById("navbar-mobile");
-                    if (x.className == "topnav") {
-                        x.className += " responsive";
-                        document.getElementById("page-container").style.top = "120px";
-                    } else {
-                        x.className = "topnav";
-                        document.getElementById("page-container").style.top = "0px";
-                    }
-                }
-            </script>
-
-            <div id="text">
-                <h2 style="color:dodgerblue">Changelog:</h2>
-                <p>
-                    <b style="color:red">Found a bug?</b> <a href="./report_a_problem.html">Report a problem.</a>
-                </p>
-                <br>
-                    <b style="color:darkorange">1.2.0</b> Released 14 Mar 2021
+    <!-- Begin page content -->
+    <main class="flex-shrink-0">
+        <!-- Top page header -->
+        <div class="px-4 py-5 my-5 text-left">
+            <div class="container px-4 py-2" id="icon-grid">
+                <div class="text-center px-4 py-2 border-bottom">
+                    <br>
+                    <p>
+                        <b style="color:red">Found a bug?</b> <a href="./report_a_problem.html">Report a problem.</a>
+                    </p>
+                </div>
+                <h2 class="pb-2 py-5">Release Notes</h2>
+                <h4 class="pb-2">Version 2.0 Released!</h4>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 py-5 border-bottom">
+                    <div class="col d-flex align-items-start">
+                        <!--<svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#bootstrap"/></svg>-->
+                        <div>
+                            <h4 class="fw-bold mb-0">Re-written from the ground up.</h4>
+                            <p>Less bloat should mean increased performance.</p>
+                        </div>
+                    </div>
+                    <div class="col d-flex align-items-start">
+                        <!--<svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#bootstrap"/></svg>-->
+                        <div>
+                            <h4 class="fw-bold mb-0">Updated UI</h4>
+                            <p>Updated, cleaner UI based on Bootstrap.</p>
+                        </div>
+                    </div>
+                    <div class="col d-flex align-items-start">
+                        <!--<svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#bootstrap"/></svg>-->
+                        <div>
+                            <h4 class="fw-bold mb-0">New Content</h4>
+                            <p>Added new content to main page, with more content coming soon!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="py-5 text-left">
+                    <h2>Changelog</h2>
+                    <br>
+                    <b style="color:darkorange">2.0.0</b> Released 9 May 2021
+                    <p>A complete from-scratch re-write!</p>
+                    <ul>
+                        <li>Re-wrote all pages from scratch.</li>
+                        <li>Cleaned up UI.</li>
+                        <li>Improved performance.</li>
+                        <li>Deprecated a few easter eggs.</li>
+                        <li>Added new content to main page.</li>
+                    </ul>
+                    <b>1.2.0</b> Released 14 Mar 2021
                     <p>A few relatively large updates</p>
                     <ul>
                         <li>The URL has changed to <a href="https://mark-atkisson.github.io">https://mark-atkisson.github.io</a></li>
@@ -231,31 +249,16 @@
                     <b>0.01a:</b> Released 17 April 2020<ul>
                         <li>First release.</li>
                     </ul>
-                <br>
+                    <br>
+                </div>
             </div>
-
-            <script type="text/javascript">
-                // When the user scrolls the page, execute myFunction
-                window.onscroll = function() {stickHeader()};
-
-                // Get the navbar
-                var navbar = document.getElementById("header");
-
-                // Get the offset position of the navbar
-                var sticky = navbar.offsetTop;
-
-                // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-                function stickHeader() {
-                    if (window.pageYOffset >= sticky) {
-                        navbar.classList.add("sticky")
-                    } else {
-                        navbar.classList.remove("sticky");
-                    }
-                }
-            </script>
-
         </div>
-        <footer id="footer">Made with ❤️ by <b>Mark Atkisson</b>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer mt-auto py-3 bg-light text-center">
+        <div class="container">
+            <span class="text-muted">Made with ❤️ by <b>Mark Atkisson</b></span>
             <br>
             <br>
             <div class="footer-links">
@@ -266,8 +269,9 @@
                 <a href="./related_sites.html">Related Sites</a>
                 <a href="./report_a_problem.html">Report a Problem</a>
             </div>
-            <br><p id="copyright">© 2020-2099 Mark Atkisson</p>
-        </footer>
-    </div>
+            <br><p id="copyright" style="font-size: 12px">© 2020-2099 Mark Atkisson</p>
+        </div>
+    </footer>
+
 </body>
 </html>

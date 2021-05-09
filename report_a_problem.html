@@ -6,215 +6,175 @@
 @Description: Report a bug page
 -->
 
-<!DOCTYPE html>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<html>
+<!doctype html>
+<html lang="en" class="h-100">
 <head>
-    <title>Mark Atkisson | Report a Problem</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" href="theme.css"/>
-    <link rel="shortcut icon" href="https://raw.githubusercontent.com/mark-atkisson/mark-atkisson.github.io/master/resources/favicon.png">
-    <!--<link rel="shortcut icon" href="">-->
+
+    <title>Mark Atkisson | Report A Problem</title>
+
 </head>
 
-<header id="header">
-    <!-- Desktop navigation bar -->
-    <nav class="desktop">
-        <div class="topnav" id="navbar">
-            <a href="https://mark-atkisson.github.io" id="logo">Mark Atkisson</a>
-            <div class="navbar-right">
-                <a href="./contact.html" id="contact">contact</a>
-                <a href="./about.html">about</a>
-                <a href="https://mark-atkisson.github.io">home</a>
+<body class="d-flex flex-column h-100">
+
+    <header>
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-expand-md navbar-dark d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom fixed-top bg-white">
+            <div class="container-fluid">
+                <a href="https://mark-atkisson.github.io" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+                    <span class="display-6" id="logo">Mark Atkisson</span>
+                </a>
+
+                <ul class="nav nav-pills" style="margin-right:16px">
+                    <li class="nav-item"><a href="https://mark-atkisson.github.io" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="./about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="./contact.html" class="nav-link">Contact</a></li>
+                </ul>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
-    <!-- Mobile navigation bar -->
-    <nav class="mobile">
-        <div class="topnav" id="navbar-mobile">
-            <a href="https://mark-atkisson.github.io" id="logo">Mark Atkisson</a>
-            <div class="navbar-right">
-                <a href="https://mark-atkisson.github.io">home</a>
-                <a href="./about.html">about</a>
-                <a href="./contact.html" id="contact">contact</a>
+    <!-- Begin page content -->
+    <main class="flex-shrink-0">
+        <!-- Top page header -->
+        <div class="px-4 py-5 my-5 text-left">
+            <br>
+            <h2>Report a Problem</h2>
+            <p><b>Note: </b>If you would like to just contact me in general, please visit the <a href="./contact.html">contact</a> page.</p>
+            <br>
+            <p><b style="color:red">Wait!</b> Before you file a bug report, here are some <i>known issues that are currently being worked on</i>. Please <b>do not file a new bug report</b> if you are experiencing any of these problems:</p>
+            <p>
+                <ul>
+                    <li><p>Opening the menu on iOS/Android and then rotating the device might cause a blank spot at the top of the page.</p></li>
+                    <li><p>Report a problem form does not fill in selected info on Android devices; manual entry is required.</p></li>
+                </ul>
+            </p>
+            <br>
+            <p>If your issue is <b>not</b> listed above, please file a new bug report below.</p>
+            <p>Please describe the bug in <b>as much detail as you can</b> and <b>list any step(s) necessary to reproduce the issue.</b> The more information you provide, the better I am able to diagnose the problem.</p>
+
+            <div class="form-container">
+                <form name="contactform" method="post" enctype="text-plain" id="contact-form" action="#" accept-charset="UTF-8">
+                    <input type="number" name="version" class="form-control" style="font-size: 16px;" value="1.1" hidden><br>
+                    <br>
+                    <label for="browser" class="form-label">Browser</label><br>
+                    <select class="form-select" id="browser" name="browser" style="font-size: 16px;" required>
+                        <option value="Default" selected disabled>– Select –</option>
+                        <option value="Google Chrome">Google Chrome</option>
+                        <option value="Firefox">Firefox</option>
+                        <option value="Iceweasel">Iceweasel</option>
+                        <option value="Safari">Safari</option>
+                        <option value="Edge">Microsoft Edge</option>
+                        <option value="Opera">Opera</option>
+                        <option value="Brave">Brave</option>
+                        <option value="Vivaldi">Vivaldi</option>
+                        <option value="Other">Other (please specify)</option>
+                    </select><br>
+                    <br>
+                    <label for="browser-version" class="form-label">Browser Version</label> <small style="font-size:12px;">(optional)</small><br>
+                    <input type="text" name="browser-version" class="form-control" style="font-size: 16px;" placeholder="Usually in your browser's about section."><br>
+                    <br>
+                    <label for="browser-release" class="form-label">Browser Release Type</label> <small style="font-size:12px;">(optional)</small><br>
+                    <br>
+                    <select  class="form-select" id="browser-release" name="browser-release" style="font-size: 16px;">
+                        <option value="" selected disabled></option>
+                        <option value="Stable">Stable</option>
+                        <option value="Beta">Beta</option>
+                        <option value="Nightly">Nightly</option>
+                    </select><br>
+                    <br>
+                    <label for="os" class="form-label">Operating System</label><br>
+                    <select  class="form-select" class="form-select" id="os" name="os" style="font-size: 16px;" required>
+                        <option value="Default" selected disabled>– Select –</option>
+                        <option value="Android">Android</option>
+                        <option value="Windows">Windows</option>
+                        <option value="iOS">iOS (iPhone/iPad)</option>
+                        <option value="macOS">macOS</option>
+                        <option value="ChromeOS">ChromeOS</option>
+                        <option value="Linux">Linux</option>
+                        <option value="Other">Other (please specify)</option>
+                    </select><br>
+                    <br>
+                    <label for="os-version" class="form-label">Operating System Version</label> <small style="font-size:12px;">(optional)</small><br>
+                    <input type="text" name="os-version" class="form-control" style="font-size: 16px;" placeholder="Usually in your device's settings."><br>
+                    <br>
+                    <label for="os-release" class="form-label">Operating System Release Type</label> <small style="font-size:12px;">(optional)</small><br>
+                    <br>
+                    <select class="form-select"  id="os-release" name="os-release" style="font-size: 16px;">
+                        <option value="" selected disabled></option>
+                        <option value="Stable">Stable</option>
+                        <option value="Beta">Beta</option>
+                        <option value="Nightly">Nightly</option>
+                    </select><br>
+                    <br>
+                    <br>
+                    <small style="font-size:14px;"><b>Note: </b>Due to limitations with GitHub Pages, clicking the "Send" button below will open your email application, where you must type your message and send it manually.</small><br>
+                    <br>
+                    <br>
+                    <a href="#" id="send-message-button"><button type="button" name="button" class="btn btn-primary me-sm-3">Send</button></a>
+                </form>
             </div>
-            <a href="javascript:void(0);" class="icon" onclick="openMenu()">
-                <i class="fa fa-bars"></i>
-            </a>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
         </div>
-    </nav>
-</header>
 
-<body class="header">
-    <div id="page-container" class="content">
-        <div id="content-wrap">
-            <!-- all other page content-->
-            <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- JS to handle emails -->
+        <script language="JavaScript" type="text/javascript">
 
-            <script type="text/javascript">
-                /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-                function openMenu() {
-                    var x = document.getElementById("navbar-mobile");
-                    if (x.className == "topnav") {
-                        x.className += " responsive";
-                        document.getElementById("page-container").style.top = "120px";
-                    } else {
-                        x.className = "topnav";
-                        document.getElementById("page-container").style.top = "0px";
-                    }
-                }
-            </script>
+            var button = document.getElementById('send-message-button');
+            button.onclick = function () {
+                button.href = "mailto:mark_atkisson@yahoo.com?subject=Bug Report";
+                button.href += "&body="
+                button.href += getVersion();
+                button.href += "%0D%0A%0D%0A";
+                button.href += getBrowser();
+                button.href += "%0D%0A%0D%0A";
+                button.href += getOS();
+                button.href += "%0D%0A%0D%0A";
+                window.location.href = "./thanks_report.html";
+            }
 
-            <div id="text">
-                <h2>Report a Problem</h2>
-                <p><b>Note: </b>If you would like to just contact me in general, please visit the <a href="./contact.html">contact</a> page.</p>
-                <br>
-                <p><b style="color:red">Wait!</b> Before you file a bug report, here are some <i>known issues that are currently being worked on</i>. Please <b>do not file a new bug report</b> if you are experiencing any of these problems:</p>
-                <p>
-                    <ul>
-                        <li><p>Opening the menu on iOS/Android and then rotating the device might cause a blank spot at the top of the page.</p></li>
-                        <li><p>Report a problem form does not fill in selected info on Android devices; manual entry is required.</p></li>
-                    </ul>
-                </p>
-                <br>
-                <p>If your issue is <b>not</b> listed above, please file a new bug report below.</p>
-                <p>Please describe the bug in <b>as much detail as you can</b> and <b>list any step(s) necessary to reproduce the issue.</b> The more information you provide, the better I am able to diagnose the problem.</p>
+            function getVersion() {
+                var form = document.getElementById('contact-form');
+                var version = form.elements["version"];
+                return "Site Version: " + version.value;
+            }
 
-                <div class="form-container">
-                    <form name="contactform" method="post" enctype="text-plain" id="contact-form" action="#" accept-charset="UTF-8">
-                        <!--<label for="version">Site Version</label><br>-->
-                        <input type="number" name="version" style="font-size: 16px;" value="1.1" hidden><br>
-                        <br>
-                        <label for="browser">Browser</label><br>
-                        <select id="browser" name="browser" style="font-size: 16px;" required>
-                            <option value="Default" selected disabled>– Select –</option>
-                            <option value="Google Chrome">Google Chrome</option>
-                            <option value="Firefox">Firefox</option>
-                            <option value="Iceweasel">Iceweasel</option>
-                            <option value="Safari">Safari</option>
-                            <option value="Edge">Microsoft Edge</option>
-                            <option value="Opera">Opera</option>
-                            <option value="Brave">Brave</option>
-                            <option value="Vivaldi">Vivaldi</option>
-                            <option value="Other">Other (please specify)</option>
-                        </select><br>
-                        <br>
-                        <label for="browser-version">Browser Version</label> <small style="font-size:12px;">(optional)</small><br>
-                        <input type="text" name="browser-version" style="font-size: 16px;" placeholder="Usually in your browser's about section."><br>
-                        <br>
-                        <label for="browser-release">Browser Release Type</label> <small style="font-size:12px;">(optional)</small><br>
-                        <br>
-                        <select id="browser-release" name="browser-release" style="font-size: 16px;">
-                            <option value="" selected disabled></option>
-                            <option value="Stable">Stable</option>
-                            <option value="Beta">Beta</option>
-                            <option value="Nightly">Nightly</option>
-                        </select><br>
-                        <br>
-                        <label for="os">Operating System</label><br>
-                        <select id="os" name="os" style="font-size: 16px;" required>
-                            <option value="Default" selected disabled>– Select –</option>
-                            <option value="Android">Android</option>
-                            <option value="Windows">Windows</option>
-                            <option value="iOS">iOS (iPhone/iPad)</option>
-                            <option value="macOS">macOS</option>
-                            <option value="ChromeOS">ChromeOS</option>
-                            <option value="Linux">Linux</option>
-                            <option value="Other">Other (please specify)</option>
-                        </select><br>
-                        <br>
-                        <label for="os-version">Operating System Version</label> <small style="font-size:12px;">(optional)</small><br>
-                        <input type="text" name="os-version" style="font-size: 16px;" placeholder="Usually in your device's settings."><br>
-                        <br>
-                        <label for="os-release">Operating System Release Type</label> <small style="font-size:12px;">(optional)</small><br>
-                        <br>
-                        <select id="os-release" name="os-release" style="font-size: 16px;">
-                            <option value="" selected disabled></option>
-                            <option value="Stable">Stable</option>
-                            <option value="Beta">Beta</option>
-                            <option value="Nightly">Nightly</option>
-                        </select><br>
-                        <!--<label for="msg">Message</label><br>
-                        <textarea id="message" name="msg" style="font-family:Helvetica; resize:vertical;" placeholder="Say something" spellcheck="true" required></textarea><br>
-                        <br>-->
-                        <br>
-                        <br>
-                        <small style="font-size:14px;"><b>Note: </b>Due to limitations with GitHub Pages, clicking the "Send" button below will open your email application, where you must type your message and send it manually.</small><br>
-                        <br>
-                        <br>
-                        <a href="#" id="send-message-button">Send</a>
-                    </form>
-                </div>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-            </div>
+            function getBrowser() {
+                var form = document.getElementById('contact-form');
+                var browser = document.getElementById('browser');
+                var browserRel = form.elements["browser-release"]
+                var browserVer = form.elements["browser-version"];
+                return "Browser: " + browser.options[browser.selectedIndex].text + " " + browserRel.options[browserRel.selectedIndex].text + " " + browserVer.value;
+            }
 
-            <!-- JS to handle emails -->
-            <script language="JavaScript" type="text/javascript">
+            function getOS() {
+                var form = document.getElementById('contact-form');
+                var os = document.getElementById('os');
+                var osVer = form.elements["os-version"];
+                var osRel = form.elements["os-release"]
+                return "OS: " + os.options[os.selectedIndex].text + " " + osVer.value + " " + osRel.options[osRel.selectedIndex].text;
+            }
 
-                var button = document.getElementById('send-message-button');
-                button.onclick = function () {
-                    button.href = "mailto:mark_atkisson@yahoo.com?subject=Bug Report";
-                    button.href += "&body="
-                    button.href += getVersion();
-                    button.href += "%0D%0A%0D%0A";
-                    button.href += getBrowser();
-                    button.href += "%0D%0A%0D%0A";
-                    button.href += getOS();
-                    button.href += "%0D%0A%0D%0A";
-                    window.location.href = "./thanks_report.html";
-                }
+        </script>
 
-                function getVersion() {
-                    var form = document.getElementById('contact-form');
-                    var version = form.elements["version"];
-                    return "Site Version: " + version.value;
-                }
+    </main>
 
-                function getBrowser() {
-                    var form = document.getElementById('contact-form');
-                    var browser = document.getElementById('browser');
-                    var browserRel = form.elements["browser-release"]
-                    var browserVer = form.elements["browser-version"];
-                    return "Browser: " + browser.options[browser.selectedIndex].text + " " + browserRel.options[browserRel.selectedIndex].text + " " + browserVer.value;
-                }
-
-                function getOS() {
-                    var form = document.getElementById('contact-form');
-                    var os = document.getElementById('os');
-                    var osVer = form.elements["os-version"];
-                    var osRel = form.elements["os-release"]
-                    return "OS: " + os.options[os.selectedIndex].text + " " + osVer.value + " " + osRel.options[osRel.selectedIndex].text;
-                }
-
-            </script>
-
-            <script type="text/javascript">
-                // When the user scrolls the page, execute myFunction
-                window.onscroll = function() {stickHeader()};
-
-                // Get the navbar
-                var navbar = document.getElementById("header");
-
-                // Get the offset position of the navbar
-                var sticky = navbar.offsetTop;
-
-                // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-                function stickHeader() {
-                    if (window.pageYOffset >= sticky) {
-                        navbar.classList.add("sticky")
-                    } else {
-                        navbar.classList.remove("sticky");
-                    }
-                }
-            </script>
-
-        </div>
-        <footer id="footer">Made with ❤️ by <b>Mark Atkisson</b>
+    <!-- Footer -->
+    <footer class="footer mt-auto py-3 bg-light text-center">
+        <div class="container">
+            <span class="text-muted">Made with ❤️ by <b>Mark Atkisson</b></span>
             <br>
             <br>
             <div class="footer-links">
@@ -225,7 +185,9 @@
                 <a href="./related_sites.html">Related Sites</a>
                 <a href="./report_a_problem.html">Report a Problem</a>
             </div>
-            <br><p id="copyright">© 2020-2099 Mark Atkisson</p>
-        </footer>
-    </body>
-    </html>
+            <br><p id="copyright" style="font-size: 12px">© 2020-2099 Mark Atkisson</p>
+        </div>
+    </footer>
+
+</body>
+</html>

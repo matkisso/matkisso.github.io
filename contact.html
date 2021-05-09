@@ -6,106 +6,58 @@
 @Description: Contact information
 -->
 
-<!DOCTYPE html>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<html>
+<!doctype html>
+<html lang="en" class="h-100">
 <head>
-    <title>Mark Atkisson | Contact</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" href="theme.css"/>
-    <link rel="shortcut icon" href="https://raw.githubusercontent.com/mark-atkisson/mark-atkisson.github.io/master/resources/favicon.png">
-    <!--<link rel="shortcut icon" href="">-->
+
+    <title>Mark Atkisson | Contact</title>
+
 </head>
 
-<header id="header">
-    <!-- Desktop navigation bar -->
-    <nav class="desktop">
-        <div class="topnav" id="navbar">
-            <a href="https://mark-atkisson.github.io" id="logo">Mark Atkisson</a>
-            <div class="navbar-right">
-                <a href="./contact.html" id="contact">contact</a>
-                <a href="./about.html">about</a>
-                <a href="https://mark-atkisson.github.io">home</a>
+<body class="d-flex flex-column h-100">
+
+    <header>
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-expand-md navbar-dark d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom fixed-top bg-white">
+            <div class="container-fluid">
+                <a href="https://mark-atkisson.github.io" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+                    <span class="display-6" id="logo">Mark Atkisson</span>
+                </a>
+
+                <ul class="nav nav-pills" style="margin-right:16px">
+                    <li class="nav-item"><a href="https://mark-atkisson.github.io" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="./contact.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="./about.html" class="nav-link active" aria-current="page">Contact</a></li>
+                </ul>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
-    <!-- Mobile navigation bar -->
-    <nav class="mobile">
-        <div class="topnav" id="navbar-mobile">
-            <a href="https://mark-atkisson.github.io" id="logo">Mark Atkisson</a>
-            <div class="navbar-right">
-                <a href="https://mark-atkisson.github.io">home</a>
-                <a href="./about.html">about</a>
-                <a href="./contact.html" id="contact">contact</a>
-            </div>
-            <a href="javascript:void(0);" class="icon" onclick="openMenu()">
-                <i class="fa fa-bars"></i>
-            </a>
-        </div>
-    </nav>
-</header>
-
-<body class="header">
-    <div id="page-container" class="content">
-        <div id="content-wrap">
-            <!-- all other page content-->
-            <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-            <script type="text/javascript">
-                /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-                function openMenu() {
-                    var x = document.getElementById("navbar-mobile");
-                    if (x.className == "topnav") {
-                        x.className += " responsive";
-                        document.getElementById("page-container").style.top = "120px";
-                    } else {
-                        x.className = "topnav";
-                        document.getElementById("page-container").style.top = "0px";
-                    }
-                }
-            </script>
-
-
-            <div id="text">
-                <h2>Contact Information</h2>
-                <p><b>Note: </b>If you would like to report a bug, please visit the <a href="./report_a_problem.html">report a problem</a> page.</p>
+    <!-- Begin page content -->
+    <main class="flex-shrink-0">
+        <!-- Top page header -->
+        <div class="px-4 py-5 my-5 text-left">
+            <br>
+            <h1 class="display-5 fw-bold">Contact</h1>
+            <div class="col-lg-10">
+                <p class="lead"><b>Note: </b>If you would like to report a bug, please visit the <a href="./report_a_problem.html">report a problem</a> page.</p>
                 <br>
-                <p>Otherwise, if you need to contact me for any reason, <b>the best way is through this contact form.</b> I will try to get back to you within 24 hours.</p>
-                <!--<br>
+                <p class="lead">Otherwise, if you need to contact me for any reason, <b>the best way is through this contact form.</b> I will try to get back to you within 24 hours.</p>
                 <br>
-                <div class="form-container">
-                    <form name="contactform" method="post" enctype="text-plain" id="contact-form" action="#" accept-charset="UTF-8">
-                        <label for="name">Name</label> <small style="font-size:12px;">(optional)</small><br>
-                        <input id="name" type="text" name="name" style="font-size: 16px;" placeholder="Your name here!"><br>
-                        <br>
-                        <label for="email">E-mail</label> <small style="font-size:12px;">(optional)</small><br>
-                        <input id="email" type="email" name="email" style="font-size: 16px;" placeholder="someone@example.com"><br>
-                        <br>
-                        <label for="phone">Phone</label> <small style="font-size:12px;">(optional)</small><br>
-                        <input id="phone" type="tel" name="phone" style="font-size: 16px;" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
-                        <br>
-                        <label for="subject">Subject</label><br>
-                        <select id="subject" name="subject" style="font-size: 16px;" required>
-                            <option value="Default" selected disabled>– Select –</option>
-                            <option value="Site Feedback">Site Feedback</option>
-                            <option value="More Information">Request More Information</option>
-                            <option value="Business Inquiry">Business Inquiry</option>
-                            <option value="Other">Other – Please Specify</option>
-                        </select><br>
-                        <br>
-                        <br>
-                        <small style="font-size:14px;"><b>Note: </b>Due to limitations with GitHub Pages (specifically, not supporting PHP since it's static only), clicking the "Send" button below will open your default email application, where you must type your message and send it manually. If for some reason the form above doesn't work, please email mark-atkisson (at) ucsd (dot) edu.</small><br>
-                        <br>
-                        <br>
-                        <a href="#" id="send-message-button">Send</a>
-                    </form>
-                </div>-->
                 <br>
                 <small style="font-size:14px;"><b>Disclaimer: </b>Due to limitations with GitHub Pages, clicking the "Send" button below will open your default email application, where you must type your message and send it manually.</small><br>
                 <br>
                 <br>
-                <a href="#" id="send-message-button">Send</a>
+                <a href="#" id="send-message-button"><button type="button" name="button" class="btn btn-primary me-sm-3">Send</button></a>
             </div>
 
             <!-- JS to handle emails -->
@@ -114,68 +66,17 @@
                 var button = document.getElementById('send-message-button');
                 button.onclick = function () {
                     button.href = "mailto:mark_atkisson@yahoo.com";
-                    /*button.href += "?subject="//getSubject();
-                    button.href += "&body="
-                    button.href += getName();
-                    button.href += "%0D%0A%0D%0A";
-                    button.href += getEmail();
-                    button.href += "%0D%0A%0D%0A";
-                    button.href += getPhone();
-                    button.href += "%0D%0A%0D%0A";*/
                     window.location.href = "./thanks_contact.html";
-                }
-
-                /*function getSubject() {
-                    var subject = document.getElementById('subject');
-                    return '?subject=' + subject.options[subject.selectedIndex].text;
-                }
-
-                function getName() {
-                    var form = document.getElementById('contact-form');
-                    var name = form.elements["name"];
-                    return "Name: " + name.value;
-                }
-
-                function getEmail() {
-                    var form = document.getElementById('contact-form');
-                    var email = form.elements["email"];
-                    return "E-mail: " + email.value;
-                }
-
-                function getPhone() {
-                    var form = document.getElementById('contact-form');
-                    var phone = form.elements["phone"];
-                    return "Phone: " + phone.value;
-                }
-
-                function getBody() {
-                    return "Message: " + document.getElementById('message').value;
-                }*/
-
-            </script>
-
-            <script type="text/javascript">
-                // When the user scrolls the page, execute myFunction
-                window.onscroll = function() {stickHeader()};
-
-                // Get the navbar
-                var navbar = document.getElementById("header");
-
-                // Get the offset position of the navbar
-                var sticky = navbar.offsetTop;
-
-                // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-                function stickHeader() {
-                    if (window.pageYOffset >= sticky) {
-                        navbar.classList.add("sticky")
-                    } else {
-                        navbar.classList.remove("sticky");
-                    }
                 }
             </script>
 
         </div>
-        <footer id="footer">Made with ❤️ by <b>Mark Atkisson</b>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer mt-auto py-3 bg-light text-center">
+        <div class="container">
+            <span class="text-muted">Made with ❤️ by <b>Mark Atkisson</b></span>
             <br>
             <br>
             <div class="footer-links">
@@ -186,8 +87,9 @@
                 <a href="./related_sites.html">Related Sites</a>
                 <a href="./report_a_problem.html">Report a Problem</a>
             </div>
-            <br><p id="copyright">© 2020-2099 Mark Atkisson</p>
-        </footer>
-    </div>
+            <br><p id="copyright" style="font-size: 12px">© 2020-2099 Mark Atkisson</p>
+        </div>
+    </footer>
+
 </body>
 </html>
