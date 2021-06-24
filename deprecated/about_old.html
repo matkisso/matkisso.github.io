@@ -1,0 +1,140 @@
+<!--
+@Author: mark
+@Date:   2020-04-17T23:42:19-07:00
+@Last modified by:   mark
+@Last modified time: 2020-04-17T23:42:29-07:00
+@Description: About page
+-->
+
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<html>
+<head>
+    <title>Mark Atkisson | About</title>
+    <link rel="stylesheet" type="text/css" href="theme.css"/>
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/mark-atkisson/mark-atkisson.github.io/master/resources/favicon.png">
+    <!--<link rel="shortcut icon" href="">-->
+</head>
+
+<header id="header">
+    <!-- Desktop navigation bar -->
+    <nav class="desktop">
+        <div class="topnav" id="navbar">
+            <a href="https://mark-atkisson.github.io" id="logo">Mark Atkisson</a>
+            <div class="navbar-right">
+                <a href="./contact.html" id="contact">contact</a>
+                <a href="./about.html">about</a>
+                <a href="https://mark-atkisson.github.io">home</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile navigation bar -->
+    <nav class="mobile">
+        <div class="topnav" id="navbar-mobile">
+            <a href="https://mark-atkisson.github.io" id="logo">Mark Atkisson</a>
+            <div class="navbar-right">
+                <a href="https://mark-atkisson.github.io">home</a>
+                <a href="./about.html">about</a>
+                <a href="./contact.html" id="contact">contact</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="openMenu()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </nav>
+</header>
+
+<body class="header">
+    <div id="page-container" class="content">
+        <div id="content-wrap">
+            <!-- all other page content-->
+            <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+            <script type="text/javascript">
+                /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+                function openMenu() {
+                    var x = document.getElementById("navbar-mobile");
+                    if (x.className == "topnav") {
+                        x.className += " responsive";
+                        document.getElementById("page-container").style.top = "120px";
+                    } else {
+                        x.className = "topnav";
+                        document.getElementById("page-container").style.top = "0px";
+                    }
+                }
+            </script>
+
+            <div id="text">
+                <h1>About Mark:</h1>
+                <p>Mark is an undergraduate student at the <b><a href="https://ucsd.edu/">University of California, San Diego (UCSD)</a></b> pursuing a B.S. in computer science and a minor in business, likely graduating in June 2021.</p>
+                <p>One of his earliest memories is getting a Compaq computer for Christmas and playing a fire-fighting simulation game when he was four years old. Although he no longers want to be a firefighter, the fascination with technology has stuck with him since. He has always been fascinated about how things work and would often take apart LEGO sets and use the pieces to build something else. As he progressed through school, he knew he wanted to be a computer scientist.</p>
+                <p>Before he became a UCSD student, his family members would always ask for his help when they have a technology-related issue – and they still do to this day! He also did graphic design for a non-profit, and took several online courses on app development. Since he became a UCSD student, several more activities have further stimulated his interest in computer science. You can see some of them on the <a href="https://mark-atkisson.github.io">homepage</a>. In addition to those activities, he also volunteers at an elementary school, where he has been instrumental in getting more young students interested in computer science.</p>
+                <p>His strong background in business administration has given him the opportunity to manage several large teams in the past – most notably the You See Housing team in a software engineering class. His interests include user interface design, cybersecurity, and computer simulation. He is a proponent of free and open-source software and privacy of information. You can read more about his interests on the homepage. One day, he hopes to use what he has learned to start up his own company that would help him to change society for the better.</p>
+                <p>When he's not busy with school work, he enjoys swimming, cycling, surfing, listening to music, drawing, building with LEGO, watching videos on YouTube, playing with his cat, and talking about himself in the third person.</p>
+                <br>
+                <h2 style="color:darkorange">FAQ:</h2>
+                <ul>
+                    <li><b>Q:</b> What got you interested in computer science?</li>
+                    <li><b>A:</b> As a kid I was always fascinated with how things work. I was always fascinated by technology and how it all worked, and so once I learned I could study about it and make a career out of it, here we are!</li>
+                    <br>
+                    <li><b>Q:</b> What computer do you use?</li>
+                    <li><b>A:</b> I currently use an Apple MacBook Pro 16-inch, although I have been thinking about switching to a x86 Linux machine since I'm concerned about Apple's transition to ARM chips. But for now I'm happy with my current laptop.</li>
+                    <br>
+                    <li><b>Q:</b> What was your first computer?</li>
+                    <li><b>A:</b> It depends! The first computer that I ever used was an Apple iMac G3 in my local library. The first computer that I used at home was a Compaq desktop back in 2003-2004 (sadly I don't remember the specific model name). The first computer that I didn't have to share with my family (and my first laptop as a matter of fact) was a 15-inch Toshiba laptop running Windows Vista back in 2007.</li>
+                    <br>
+                </ul>
+                <br>
+                <div>
+                    <h1>About this site:</h1>
+                    <p>This is my personal site. My <a href="https://mark-atkisson.github.io">homepage</a> serves as a showcase for my current projects and interests as well as an archive for my former projects. I also have a list of <a href="./related_sites.html">related sites</a> that you might find interesting. There is a list of "just for fun" sites on that page as well.</p>
+                    <p>If you need to contact me, please use the form on the <a href="./contact.html">contact page</a>.</p>
+                    <br>
+                    <p>Feel free to explore around – you might even find a few easter eggs!</p>
+                    <br>
+                    <h3 style="color: darkorange">Site Information:</h3>
+                    <p style="font-family: Monaco">Last updated: 14 Mar 2021 @ 20:07 <br>Version: 1.2.0 <a style="font-family:Helvetica" href="./changelog.html">View changelog</a></p>
+                    <br>
+                </div>
+                <br>
+            </div>
+
+            <script type="text/javascript">
+                // When the user scrolls the page, execute myFunction
+                window.onscroll = function() {stickHeader()};
+
+                // Get the navbar
+                var navbar = document.getElementById("header");
+
+                // Get the offset position of the navbar
+                var sticky = navbar.offsetTop;
+
+                // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+                function stickHeader() {
+                    if (window.pageYOffset >= sticky) {
+                        navbar.classList.add("sticky")
+                    } else {
+                        navbar.classList.remove("sticky");
+                    }
+                }
+            </script>
+
+        </div>
+        <footer id="footer">Made with ❤️ by <b>Mark Atkisson</b>
+            <br>
+            <br>
+            <div class="footer-links">
+                <a href="https://mark-atkisson.github.io">Home</a>
+                <a href="./about.html">About</a>
+                <a href="./contact.html">Contact</a>
+                <a href="./changelog.html">Changelog</a>
+                <a href="./related_sites.html">Related Sites</a>
+                <a href="./report_a_problem.html">Report a Problem</a>
+            </div>
+            <br><p id="copyright">© 2020-2099 Mark Atkisson</p>
+        </footer>
+    </div>
+</body>
+</html>
